@@ -1,0 +1,21 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Debug\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Debug\iRecruit.Models.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Debug\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Debug\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.csprojResolveAssemblyReference.cache
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.pdb
+D:\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Models.dll
+D:\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Models.pdb
+D:\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Entity.dll
+D:\iRecruit\Development\Source Code\iRecruit.Models\bin\Debug\iRecruit.Entity.pdb
+D:\iRecruit\Development\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.dll
+D:\iRecruit\Development\Source Code\iRecruit.Models\obj\Debug\iRecruit.Models.pdb

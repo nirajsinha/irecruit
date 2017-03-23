@@ -1,0 +1,64 @@
+﻿<div class="sideBar" >
+        <div class="sideBarButtons" style="float: left">
+            <a id="dashboardLink" ui-sref="home" ng-click="closeAll();" ng-show="menu.DashboardEnabled">
+                <div class="text-center">
+                    <i class="fa fa-dashboard  fa-2x" style="color:#f56954"></i>
+                    <br /><span>Dashboard</span>
+                </div>
+            </a>
+            <a id="indentLink" ng-click="handleIndentClick();" href="javascript:void(0);"  ng-show="menu.IndentEnabled">
+                <div class="text-center">
+                    <i class="fa fa-file-o fa-2x" style="color:#00a65a"></i>
+                    <br /><span>Indent</span>
+                </div>
+            </a>
+            <a id="resourceLink" ng-click="handleResourceClick();"  href="javascript:void(0);"  ng-show="menu.ResumeManagementEnabled || menu.InterviewsEnabled">
+                <div class="text-center">
+                <i class="fa fa-users  fa-2x" style="color:#00c0ef"></i>
+                <br /><span>Resumes</span>
+                    </div>
+            </a>
+            <a id="configLink" ng-click="handleConfigClick()"  href="javascript:void(0);" ng-show="menu.SettingsEnabled">
+                <div class="text-center">
+                    <i class="fa fa-cogs fa-2x" style="color:#f39c12"></i>
+                <br /><span>Settings</span>
+                    </div>
+            </a>
+            <a id="reportsLink" ng-click="closeAll();" href="javascript:void(0);" ng-show="menu.ReportsEnabled">
+                <div class="text-center">
+                <i class="fa fa-file-text-o fa-2x" style="color:#39cccc"></i>
+                <br /><span>Reports</span>
+                    </div>
+            </a>
+        </div>
+
+        <div class="sidebarLiveDisplay">
+            <div id="sidebarIndent">
+                <h1 style="padding-left:20px;">Indents</h1>
+                <ul>
+                    <li><a ui-sref="indent" ng-click="closeAll();" ><i class="fa fa-indent text-center menu-icon"></i>Indent</a></li>
+                    <li><a ui-sref="timeline" ng-click="closeAll();"><i class="fa fa-indent text-center menu-icon"></i>Indent Timeline</a></li>
+                    <li><a ui-sref="indenttracker" ng-click="closeAll();"><i class="fa fa-indent text-center menu-icon"></i>Indent Tracker</a></li>
+                </ul>
+            </div>
+            <div id="sidebarResources">
+                <h1 style="padding-left:20px;">Resume Management</h1>
+                <ul>
+                    <li ng-show="menu.ResumeManagementEnabled"><a ui-sref="candidate" ng-click="closeAll();"><i class="fa fa-user text-center menu-icon"></i>Upload Resume</a></li>
+                    <li ng-show="menu.ResumeManagementEnabled"><a ui-sref="resumesearch" ng-click="closeAll();"><i class="fa fa-user text-center menu-icon"></i>Resume Search</a></li>
+                    <li><a ui-sref="profile" ng-click="closeAll();"><i class="fa fa-user text-center menu-icon"></i>View Profile</a></li>
+                    <li ng-show="menu.InterviewsEnabled"><a ui-sref="interviewschedule" ng-click="closeAll();"><i class="fa fa-user text-center menu-icon"></i>Schedule Interview</a></li>
+                    <li ng-show="menu.InterviewsEnabled"><a ui-sref="interviewfeedback" ng-click="closeAll();"><i class="fa fa-user text-center menu-icon"></i>Interview Feedback</a></li>
+                </ul>
+            </div>
+            <div id="sidebarConfig">
+                <h1 style="padding-left:20px;">Configurations</h1>
+                <ul>
+                    <li><a ui-sref="departments" ng-click="closeAll();"><i class="fa fa-cog text-center menu-icon"></i>Departments</a></li>
+                    <li><a ui-sref="users" ng-click="closeAll();"><i class="fa fa-cog text-center menu-icon"></i>Users</a></li>
+                    <li><a ui-sref="skills" ng-click="closeAll();"><i class="fa fa-cog text-center menu-icon"></i>Technologies and Skills</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>

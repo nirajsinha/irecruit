@@ -1,0 +1,118 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<style>
+    .chosen-container .search-field{
+        height:34px;
+    }
+        
+</style>
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+        <a href="javascript:window.history.back();" class="back-button big"></a>     
+        <h1 style="font-size:36px;margin-left:80px; margin-top:45px">Departments
+        </h1>
+        </div>
+        </div>
+</section>
+
+<section class="content">
+ <div class="row">
+     <form name="userForm" ng-submit="submitForm(userForm.$valid);" novalidate>
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">Department Information</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                                
+                    <div class="box-body">
+                        <div ng-show="1!=1">{{dept.DepartmentRoleID}}</div>
+                        <div class="form-group">
+                            <label>Branch</label>
+                                <select class="form-control" name="branch" ng-model="dept.branch" required ng-options="b.Code for b in data.branches">
+                                <option value="">--- Select Branch ---</option>     
+                            </select>
+                                <p ng-show="userForm.branch.$invalid && $formPristine" class="has-error">This is required.</p>
+                            <div class="form-group">
+                                (<small>{{dept.branch.City}}, {{dept.branch.State}}, {{dept.branch.Country}}</small>)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Department</label>
+                            <select class="form-control" name="dept" ng-model="dept.dept" required ng-options="br.Name for br in data.departments">
+                                <option value="">--- Select Department ---</option>
+                            </select>
+                                <p ng-show="userForm.dept.$invalid && $formPristine" class="has-error">This is required.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Function Head</label>
+                            <input type="text" id="fh" name="fh" autocomplete="off" class="form-control" required username ng-model="dept.FunctionHeadLabel" typeahead="i.label for i in searchUser($viewValue)" typeahead-loading="loadingLocations" typeahead-on-select="onFunctionHeadSelected($item, $model, $label)">
+                            <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+                            <p ng-show="userForm.fh.$error.required && $formPristine" class="has-error">Function Head is required.</p>
+                            <p ng-show="userForm.fh.$invalid && $formPristine" class="has-error">Only configured users can access the application!</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Final Approver (Senior Vice President)</label>
+                            <input type="text" id="svp" name="svp" autocomplete="off" class="form-control" required username ng-model="dept.SVPLabel" typeahead="i.label for i in searchUser($viewValue)" typeahead-loading="loadingLocations" typeahead-on-select="onSVPSelected($item, $model, $label)">
+                            <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+                            <p ng-show="userForm.svp.$error.required && $formPristine" class="has-error">SVP is required.</p>
+                             <p ng-show="userForm.svp.$invalid && $formPristine" class="has-error">Only configured users can access the application!</p>
+                        </div>
+                        <div class="form-group">
+                            <button type="reset" class="btn btn-primary">New</button> 
+                            <button type="submit" class="btn btn-success">Update Changes</button>
+                            </div>
+                    </div><!-- /.box-body -->
+
+                                
+            </div><!-- /.box -->
+      </form>             
+        </div><!--/.col (left) -->
+        <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header bg-light-blue">
+                    <h3 class="box-title">Departments</h3>
+                    <div class="box-tools">
+                        <div class="input-group">
+                            <input name="table_search" ng-model="table_search" class="form-control input-sm pull-right" style="width: 200px;" placeholder="Search" type="text">
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                        <tbody><tr>
+                            <th>Branch</th>
+                            <th>Name</th>
+                            <th>Function Head</th>
+                            <th>Final Approver</th>
+                        </tr>
+                        <tr ng-repeat="i in department_roles | filter:table_search" ng-click="selectData(department_roles.indexOf(i));">
+                            <td>{{i.branch.Code}}</td>
+                            <td>{{i.dept.Name}}</td>
+                            <td>{{i.FunctionHeadLabel}}</td>
+                            <td>{{i.SVPLabel}}</td>
+                        </tr>
+                        
+                    </tbody></table>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div>
+    </div>
+    </section><!-- /.content -->
+
+
+
+@section scripts{
+  <script>
+
+  </script>
+}

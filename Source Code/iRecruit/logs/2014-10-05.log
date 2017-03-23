@@ -1,0 +1,398 @@
+2014-10-05 12:41:23.5857|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 12:41:23.6377|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 12:48:43.5839|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 12:48:43.6319|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 12:48:55.0055|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Request http://localhost:58637/api/users/getuser/nsinha
+2014-10-05 12:48:55.0055|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Request http://localhost:58637/api/dashboard/OpenPositionsDetails/1
+2014-10-05 12:48:55.0055|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Request http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false
+2014-10-05 12:48:55.0055|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Request http://localhost:58637/api/dashboard/topopenings/1
+2014-10-05 12:48:55.0115|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:48:55.0115|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:48:55.0115|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:48:55.0115|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:48:55.0815|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:users,action:getuser,id:nsinha'
+2014-10-05 12:48:55.1245|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Users
+2014-10-05 12:48:55.1245|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:topopenings,id:1'
+2014-10-05 12:48:55.1245|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:48:55.1075|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:OpenPositionsDetails,id:1'
+2014-10-05 12:48:55.1515|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:48:55.1385|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 12:48:55.1845|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 12:48:55.1385|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:OfferJoiningRatio,id:1'
+2014-10-05 12:48:55.2015|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.UsersController
+2014-10-05 12:48:55.2015|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:48:55.2015|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:48:55.2015|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 12:48:55.2185|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.UsersController
+2014-10-05 12:48:55.2185|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:48:55.2325|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:48:55.2475|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController ExecuteAsync
+2014-10-05 12:48:55.2325|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:48:55.2625|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 12:48:55.2625|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 12:48:55.2625|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:48:55.2625|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:48:55.2785|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 12:48:55.2785|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 12:48:55.2785|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 12:48:55.2925|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:48:55.3085|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 12:48:55.3085|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'GetUser(String id)'
+2014-10-05 12:48:55.3085|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:48:55.3085|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:48:55.3255|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:48:55.3255|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:48:55.3255|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'TopOpenings(Int32 id)'
+2014-10-05 12:48:55.3425|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:48:55.3425|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:48:55.3545|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:48:55.3425|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'OpenPositionsDetails(Int32 id)'
+2014-10-05 12:48:55.3545|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:48:55.3545|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:48:55.3725|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:48:55.3725|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 12:48:55.3895|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:48:55.3895|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:48:55.4165|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:48:55.4455|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 12:48:55.4455|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value 'nsinha'
+2014-10-05 12:48:55.4455|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 12:48:55.4455|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 12:48:55.4525|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-10-05 12:48:55.4525|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=nsinha
+2014-10-05 12:48:55.4635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'b'
+2014-10-05 12:48:55.4635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-10-05 12:48:55.4635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'TopOpenings(Int32 id)'
+2014-10-05 12:48:55.4635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'GetUser(String id)'
+2014-10-05 12:48:55.4825|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'b' bound to the value 'false'
+2014-10-05 12:48:55.4825|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'OpenPositionsDetails(Int32 id)'
+2014-10-05 12:48:55.4945|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:48:55.4945|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:48:55.4945|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1, b=false
+2014-10-05 12:48:55.4945|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:48:55.5135|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='TopOpenings(id=1)'
+2014-10-05 12:48:55.5135|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='GetUser(id=nsinha)'
+2014-10-05 12:48:55.5135|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 12:48:55.5135|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='OpenPositionsDetails(id=1)'
+2014-10-05 12:48:55.5265|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'TopOpenings(id=1)'
+2014-10-05 12:48:55.5265|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'GetUser(id=nsinha)'
+2014-10-05 12:48:55.5265|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:48:55.5265|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'OpenPositionsDetails(id=1)'
+2014-10-05 12:48:55.5455|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='OfferJoiningRatio(id=1, b=false)'
+2014-10-05 12:48:55.5675|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'OfferJoiningRatio(id=1, b=false)'
+2014-10-05 12:49:29.1885|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 iRecruit.Controllers.DashboardController
+2014-10-05 12:49:30.8996|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:49:30.9186|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:49:30.9266|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'OpenPositionsDetails(Int32 id)'
+2014-10-05 12:49:30.9396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:49:30.9396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:49:30.9586|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:49:30.9696|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:49:31.0456|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:49:31.4706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:50:03.5764|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 iRecruit.Controllers.DashboardController
+2014-10-05 12:50:03.5764|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:50:03.5764|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:50:03.5934|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'TopOpenings(Int32 id)'
+2014-10-05 12:50:03.5934|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:50:03.5934|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:50:03.6094|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:50:03.6094|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:50:03.6204|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:50:03.6414|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:50:39.7445|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false iRecruit.Controllers.DashboardController
+2014-10-05 12:50:39.7445|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha iRecruit.Controllers.UsersController
+2014-10-05 12:50:39.7445|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:50:39.7575|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:50:39.7685|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:50:39.7575|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:50:39.7685|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 12:50:39.7685|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'GetUser(String id)'
+2014-10-05 12:50:39.7685|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:50:39.7845|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:50:39.7845|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController ExecuteAsync
+2014-10-05 12:50:39.7845|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:50:39.7985|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:50:39.7985|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:50:39.8125|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:50:39.7985|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:50:39.8125|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController Dispose
+2014-10-05 12:50:39.8125|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController Dispose
+2014-10-05 12:50:39.8125|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:50:39.8305|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:57:12.8950|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 12:57:12.9240|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 12:57:18.7093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Request http://localhost:58637/api/users/getuser/nsinha
+2014-10-05 12:57:18.7093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Request http://localhost:58637/api/dashboard/OpenPositionsDetails/1
+2014-10-05 12:57:18.7093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:57:18.7093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:57:18.8083|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Request http://localhost:58637/api/dashboard/topopenings/1
+2014-10-05 12:57:18.8263|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:users,action:getuser,id:nsinha'
+2014-10-05 12:57:18.8083|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:OpenPositionsDetails,id:1'
+2014-10-05 12:57:18.8383|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:57:18.8383|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Request http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false
+2014-10-05 12:57:18.8483|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Users
+2014-10-05 12:57:18.8483|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 12:57:18.8483|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:57:18.8643|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:57:18.8643|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:57:18.8843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:topopenings,id:1'
+2014-10-05 12:57:18.8843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:57:18.9033|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:57:18.9163|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 12:57:18.9163|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:OfferJoiningRatio,id:1'
+2014-10-05 12:57:18.9423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 12:57:18.9423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.UsersController
+2014-10-05 12:57:18.9423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 12:57:18.9423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 12:57:18.9273|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:57:18.9633|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.UsersController
+2014-10-05 12:57:18.9633|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 12:57:18.9743|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:57:18.9743|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:57:18.9953|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 12:57:18.9743|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController ExecuteAsync
+2014-10-05 12:57:19.0083|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 12:57:19.0083|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:57:19.0223|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 12:57:19.0223|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:57:19.0363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 12:57:19.0513|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 12:57:19.0513|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'OpenPositionsDetails(Int32 id)'
+2014-10-05 12:57:19.0513|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'GetUser(String id)'
+2014-10-05 12:57:19.0703|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:57:19.0703|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:57:19.1013|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:57:19.0853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 12:57:19.1013|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'TopOpenings(Int32 id)'
+2014-10-05 12:57:19.1013|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:57:19.1143|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:57:19.1143|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:57:19.1143|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 12:57:19.1143|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:57:19.1303|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:57:19.1303|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:57:19.1303|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 12:57:19.1593|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 12:57:19.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value 'nsinha'
+2014-10-05 12:57:19.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 12:57:19.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 12:57:19.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 12:57:19.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=nsinha
+2014-10-05 12:57:19.2233|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'b'
+2014-10-05 12:57:19.2233|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-10-05 12:57:19.2233|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-10-05 12:57:19.2423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'b' bound to the value 'false'
+2014-10-05 12:57:19.2423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'GetUser(String id)'
+2014-10-05 12:57:19.2423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'OpenPositionsDetails(Int32 id)'
+2014-10-05 12:57:19.2543|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'TopOpenings(Int32 id)'
+2014-10-05 12:57:19.2543|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1, b=false
+2014-10-05 12:57:19.2543|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:57:19.2543|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:57:19.2694|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:57:19.2694|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 12:57:19.2844|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='OpenPositionsDetails(id=1)'
+2014-10-05 12:57:19.2844|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='GetUser(id=nsinha)'
+2014-10-05 12:57:19.2844|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='TopOpenings(id=1)'
+2014-10-05 12:57:19.2844|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 12:57:19.3004|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'OpenPositionsDetails(id=1)'
+2014-10-05 12:57:19.3004|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'GetUser(id=nsinha)'
+2014-10-05 12:57:19.3004|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='OfferJoiningRatio(id=1, b=false)'
+2014-10-05 12:57:19.3004|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'TopOpenings(id=1)'
+2014-10-05 12:57:19.3164|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'OfferJoiningRatio(id=1, b=false)'
+2014-10-05 12:57:54.1143|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha iRecruit.Controllers.UsersController
+2014-10-05 12:57:54.1263|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:57:54.1433|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:57:54.1503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'GetUser(String id)'
+2014-10-05 12:57:54.1503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:57:54.1503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController ExecuteAsync
+2014-10-05 12:57:54.1503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:57:54.1683|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:57:54.2113|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController Dispose
+2014-10-05 12:57:54.2153|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController Dispose
+2014-10-05 12:58:27.2122|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false iRecruit.Controllers.DashboardController
+2014-10-05 12:58:27.2122|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:58:27.2122|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:58:27.2242|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 12:58:27.2242|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:58:27.2242|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:58:27.2242|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:58:27.2392|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:58:27.2552|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:58:27.2552|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:59:02.1632|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 iRecruit.Controllers.DashboardController
+2014-10-05 12:59:02.2222|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:59:02.2682|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:59:02.2682|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'OpenPositionsDetails(Int32 id)'
+2014-10-05 12:59:02.2942|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:59:02.3342|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:59:02.3732|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:59:02.4122|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:59:02.5073|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:59:02.5713|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:59:02.6293|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 iRecruit.Controllers.DashboardController
+2014-10-05 12:59:02.6293|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 12:59:02.6363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 12:59:02.6363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'TopOpenings(Int32 id)'
+2014-10-05 12:59:02.6363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 12:59:02.6363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 12:59:02.6363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 12:59:02.6513|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 12:59:02.6513|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 12:59:02.6683|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:16:31.6003|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 13:16:31.6533|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-10-05 13:16:39.6187|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Request http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false
+2014-10-05 13:16:39.6187|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Request http://localhost:58637/api/users/getuser/nsinha
+2014-10-05 13:16:39.6197|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Request http://localhost:58637/api/dashboard/OpenPositionsDetails/1
+2014-10-05 13:16:39.6197|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Request http://localhost:58637/api/dashboard/topopenings/1
+2014-10-05 13:16:39.6197|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:16:39.6407|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:16:39.6407|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:16:39.6507|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:16:39.7097|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:users,action:getuser,id:nsinha'
+2014-10-05 13:16:39.7097|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:OpenPositionsDetails,id:1'
+2014-10-05 13:16:39.7097|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:OfferJoiningRatio,id:1'
+2014-10-05 13:16:39.7287|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 13:16:39.7287|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 13:16:39.7467|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 13:16:39.7467|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:dashboard,action:topopenings,id:1'
+2014-10-05 13:16:39.7287|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 13:16:39.7287|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Users
+2014-10-05 13:16:39.7617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 13:16:39.7617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 13:16:39.7777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 13:16:39.7617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Dashboard
+2014-10-05 13:16:39.7777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 13:16:39.7987|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 13:16:39.7777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 13:16:39.7987|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-10-05 13:16:39.8107|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 13:16:39.8107|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.UsersController
+2014-10-05 13:16:39.8227|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 13:16:39.8227|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-10-05 13:16:39.8397|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 13:16:39.8397|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.UsersController
+2014-10-05 13:16:39.8577|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 13:16:39.8577|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.DashboardController
+2014-10-05 13:16:39.8577|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 13:16:39.8577|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController ExecuteAsync
+2014-10-05 13:16:39.8727|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 13:16:39.8727|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.DashboardController
+2014-10-05 13:16:39.8887|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 13:16:39.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 13:16:39.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'OpenPositionsDetails(Int32 id)'
+2014-10-05 13:16:39.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'GetUser(String id)'
+2014-10-05 13:16:39.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 13:16:39.9197|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-10-05 13:16:39.9367|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'TopOpenings(Int32 id)'
+2014-10-05 13:16:39.9367|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 13:16:39.9367|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 13:16:39.9367|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 13:16:39.9367|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-10-05 13:16:39.9517|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 13:16:39.9517|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 13:16:39.9517|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 13:16:39.9517|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-10-05 13:16:40.0147|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 13:16:40.0147|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 13:16:40.0147|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-10-05 13:16:40.0147|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value 'nsinha'
+2014-10-05 13:16:40.0147|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'b'
+2014-10-05 13:16:40.0257|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-10-05 13:16:40.0257|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-10-05 13:16:40.0257|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=nsinha
+2014-10-05 13:16:40.0257|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'b' bound to the value 'false'
+2014-10-05 13:16:40.0427|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'TopOpenings(Int32 id)'
+2014-10-05 13:16:40.0427|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'OpenPositionsDetails(Int32 id)'
+2014-10-05 13:16:40.0427|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'GetUser(String id)'
+2014-10-05 13:16:40.0427|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1, b=false
+2014-10-05 13:16:40.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 13:16:40.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 13:16:40.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 13:16:40.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 13:16:40.0727|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='TopOpenings(id=1)'
+2014-10-05 13:16:40.0727|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='OpenPositionsDetails(id=1)'
+2014-10-05 13:16:40.0727|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='GetUser(id=nsinha)'
+2014-10-05 13:16:40.0727|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-10-05 13:16:40.0877|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'OpenPositionsDetails(id=1)'
+2014-10-05 13:16:40.0877|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'TopOpenings(id=1)'
+2014-10-05 13:16:40.0877|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'GetUser(id=nsinha)'
+2014-10-05 13:16:40.0877|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='OfferJoiningRatio(id=1, b=false)'
+2014-10-05 13:16:40.1087|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'OfferJoiningRatio(id=1, b=false)'
+2014-10-05 13:17:13.5747|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 iRecruit.Controllers.DashboardController
+2014-10-05 13:17:13.5837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 13:17:13.5837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 13:17:13.5837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'OpenPositionsDetails(Int32 id)'
+2014-10-05 13:17:13.5977|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 13:17:13.5977|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 13:17:13.5977|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:17:13.6127|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 13:17:13.6587|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:17:13.6627|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OpenPositionsDetails/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:17:48.5547|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false iRecruit.Controllers.DashboardController
+2014-10-05 13:17:48.5587|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 13:17:48.5587|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 13:17:48.5587|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'OfferJoiningRatio(Int32 id, String b)'
+2014-10-05 13:17:48.5587|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 13:17:48.5757|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 13:17:48.5757|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:17:48.5757|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 13:17:48.5897|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:17:48.5897|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:18:23.4267|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 iRecruit.Controllers.DashboardController
+2014-10-05 13:18:23.4927|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 13:18:23.5387|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 13:18:23.6287|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'TopOpenings(Int32 id)'
+2014-10-05 13:18:23.6937|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 13:18:23.7377|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController ExecuteAsync
+2014-10-05 13:18:23.7597|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:18:23.7997|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 13:18:23.8457|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:18:23.8857|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/dashboard/topopenings/1 System.Web.Http.Controllers DashboardController Dispose
+2014-10-05 13:18:23.8857|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha iRecruit.Controllers.UsersController
+2014-10-05 13:18:23.8937|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: text/plain; charset=utf-8
+}'
+2014-10-05 13:18:23.8937|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-10-05 13:18:23.8937|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'GetUser(String id)'
+2014-10-05 13:18:23.8937|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-10-05 13:18:23.9087|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController ExecuteAsync
+2014-10-05 13:18:23.9087|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-10-05 13:18:23.9087|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Request Content-type='text/plain; charset=utf-8', content-length=416
+2014-10-05 13:18:23.9227|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController Dispose
+2014-10-05 13:18:23.9227|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/users/getuser/nsinha System.Web.Http.Controllers UsersController Dispose

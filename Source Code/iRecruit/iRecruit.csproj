@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69C1D919-8C64-4731-9FFD-59874E3E1E7E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iRecruit</RootNamespace>
+    <AssemblyName>iRecruit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler">
+      <HintPath>..\packages\MiniProfiler.3.1.1.140\lib\net40\MiniProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler.EntityFramework6">
+      <HintPath>..\packages\MiniProfiler.EF6.3.0.11\lib\net40\MiniProfiler.EntityFramework6.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc">
+      <HintPath>..\packages\Ninject.MVC3.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="css\angular-wizard.css" />
+    <Content Include="css\angular-wizard.min.css" />
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\chosen.min.css" />
+    <Content Include="css\colorbox.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="Scripts\app\directives\module-name.js" />
+    <Content Include="Scripts\app\routes.js" />
+    <Content Include="Scripts\app\directives\datetimepicker.js" />
+    <Content Include="Scripts\app\directives\infinite-scroll.js" />
+    <Content Include="Scripts\app\directives\navigation.js" />
+    <Content Include="Scripts\app\directives\wysihtml5-editor.js" />
+    <Content Include="Scripts\app\directives\custom-validators.js" />
+    <Content Include="Scripts\app\directives\file-upload.js" />
+    <Content Include="Scripts\app\directives\directives.module.js" />
+    <Content Include="Scripts\app\modules\home\home.module.js" />
+    <Content Include="Scripts\app\modules\home\home.service.js" />
+    <Content Include="Scripts\app\modules\indent\indent.tracker.ctrl.js" />
+    <Content Include="Scripts\app\modules\indent\indent.module.js" />
+    <Content Include="Scripts\app\modules\indent\indent.service.js" />
+    <Content Include="Scripts\app\modules\resources\interview.schedule.ctrl.js" />
+    <Content Include="Scripts\app\modules\resources\interview.feedback.ctrl.js" />
+    <Content Include="Scripts\app\modules\resources\profile.view.ctrl.js" />
+    <Content Include="Scripts\app\modules\resources\resume.search.ctrl.js" />
+    <Content Include="Scripts\app\modules\resources\profile.service.js" />
+    <Content Include="Scripts\app\modules\resources\resources.module.js" />
+    <Content Include="Scripts\app\modules\settings\settings.module.js" />
+    <Content Include="Scripts\app\modules\settings\settings.service.js" />
+    <Content Include="Scripts\app\modules\settings\skills.ctrl.js" />
+    <Content Include="Scripts\app\services\services.module.js" />
+    <Content Include="fonts\Roboto-Thin-webfont.svg" />
+    <Content Include="images\approvals.png" />
+    <Content Include="images\avatar-mini.png" />
+    <Content Include="images\bluemanm.png" />
+    <Content Include="images\border.png" />
+    <Content Include="images\Calendar128.png" />
+    <Content Include="images\chosen-sprite.png" />
+    <Content Include="images\controls.png" />
+    <Content Include="images\documents.png" />
+    <Content Include="images\grid.png" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading_background.png" />
+    <Content Include="images\logo32.png" />
+    <Content Include="images\Mail128.png" />
+    <Content Include="images\overlay.png" />
+    <Content Include="images\profile.png" />
+    <Content Include="images\profile_icon.png" />
+    <Content Include="images\reports.png" />
+    <Content Include="images\responsive.png" />
+    <Content Include="images\schedules.png" />
+    <Content Include="images\separator.png" />
+    <Content Include="css\toastr.css" />
+    <Content Include="css\site.css" />
+    <Content Include="css\bootstrap-wysihtml5\bootstrap3-wysihtml5.css" />
+    <Content Include="css\bootstrap-wysihtml5\bootstrap3-wysihtml5.min.css" />
+    <Content Include="css\ionicons.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\ionicons.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\blur-background04.jpg" />
+    <Content Include="images\blur-background08.jpg" />
+    <Content Include="images\blur-background09.jpg" />
+    <Content Include="images\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="images\bootstrap-colorpicker\alpha.png" />
+    <Content Include="images\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="images\bootstrap-colorpicker\hue.png" />
+    <Content Include="images\bootstrap-colorpicker\saturation.png" />
+    <Content Include="images\credit\american-express.png" />
+    <Content Include="images\credit\cirrus.png" />
+    <Content Include="images\credit\mastercard.png" />
+    <Content Include="images\credit\mestro.png" />
+    <Content Include="images\credit\paypal.png" />
+    <Content Include="images\credit\paypal2.png" />
+    <Content Include="images\credit\visa.png" />
+    <Content Include="images\icons.png" />
+    <Content Include="images\simple.png" />
+    <Content Include="images\SolDev_WebApps_Blk.png" />
+    <Content Include="images\sprite-skin-flat.png" />
+    <Content Include="images\sprite-skin-nice.png" />
+    <Content Include="images\user-bg.png" />
+    <Content Include="Scripts\app\modules\settings\user.ctrl.js" />
+    <Content Include="Scripts\app\modules\settings\department.ctrl.js" />
+    <Content Include="Scripts\app\modules\home\home.ctrl.js" />
+    <Content Include="Scripts\app\modules\indent\indent.ctrl.js" />
+    <Content Include="Scripts\app\modules\resources\profile.edit.ctrl.js" />
+    <Content Include="Scripts\app\modules\indent\indent.timeline.ctrl.js" />
+    <Content Include="Scripts\app\directives\app-role-mapping.js" />
+    <Content Include="Scripts\app\directives\chosen.js" />
+    <Content Include="Scripts\app\directives\repeat-completed.js" />
+    <Content Include="Scripts\app\global.js" />
+    <Content Include="Scripts\app\services\common.service.js" />
+    <Content Include="Scripts\app\services\dependency.resolver.js" />
+    <Content Include="Scripts\app\services\persist.service.js" />
+    <Content Include="Scripts\assets\angular-charts\angular-charts.min.js" />
+    <Content Include="Scripts\assets\angular-cookies\angular-cookies.js" />
+    <Content Include="Scripts\assets\angular-cookies\angular-cookies.min.js" />
+    <Content Include="Scripts\assets\angular-local-storage\angular-local-storage.js" />
+    <Content Include="Scripts\assets\angular-messages\angular-messages.js" />
+    <Content Include="Scripts\assets\angular-messages\angular-messages.min.js" />
+    <Content Include="Scripts\assets\angular-resource\angular-resource.js" />
+    <Content Include="Scripts\assets\angular-resource\angular-resource.min.js" />
+    <Content Include="Scripts\assets\angular-route\angular-route.js" />
+    <Content Include="Scripts\assets\angular-route\angular-route.min.js" />
+    <Content Include="Scripts\assets\angular-sanitize\angular-sanitize.js" />
+    <Content Include="Scripts\assets\angular-sanitize\angular-sanitize.min.js" />
+    <Content Include="Scripts\assets\angular-translate\angular-translate.min.js" />
+    <Content Include="Scripts\assets\angular-ui-router\angular-ui-router.js" />
+    <Content Include="Scripts\assets\angular-wizard\angular-wizard.js" />
+    <Content Include="Scripts\assets\angular-wizard\angular-wizard.min.js" />
+    <Content Include="Scripts\assets\d3.v3\d3.v3.min.js" />
+    <Content Include="Scripts\assets\dialogs\dialogs-default-translations.js" />
+    <Content Include="Scripts\assets\dialogs\dialogs.min.js" />
+    <Content Include="Scripts\assets\jquery\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\assets\jquery\jquery-ui.js" />
+    <Content Include="Scripts\assets\jquery\jquery-ui.min.js" />
+    <Content Include="css\loading-bar.min.css" />
+    <Content Include="Scripts\assets\plugins\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="Scripts\assets\plugins\loading-bar.min.js" />
+    <Content Include="Scripts\assets\lodash\lodash.js" />
+    <Content Include="Scripts\assets\moment\moment-timezone.min.js" />
+    <Content Include="Scripts\assets\moment\moment.min.js" />
+    <Content Include="Scripts\assets\moment\moment_langs.js" />
+    <Content Include="Scripts\assets\plugins\chosen.jquery.js" />
+    <Content Include="Scripts\assets\plugins\jquery.chosen.min.js" />
+    <Content Include="Scripts\assets\plugins\jquery.easing.1.3.js" />
+    <Content Include="Scripts\assets\plugins\jquery.form.min.js" />
+    <Content Include="Scripts\assets\plugins\jstz-1.0.4.min.js" />
+    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\assets\angular\angular.js" />
+    <Content Include="Scripts\assets\angular\angular.min.js" />
+    <Content Include="Scripts\assets\bootstrap\bootstrap.min.js" />
+    <Content Include="Scripts\assets\common-scripts.js" />
+    <Content Include="Scripts\assets\plugins\jquery.scrollTo.min.js" />
+    <Content Include="Scripts\assets\jquery\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\assets\jquery\jquery.validate.min.js" />
+    <Content Include="Scripts\assets\jquery\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\assets\plugins\jquery.xml2json.js" />
+    <Content Include="Scripts\assets\prettify.js" />
+    <Content Include="Scripts\assets\require.js" />
+    <Content Include="Scripts\assets\plugins\toastr.min.js" />
+    <Content Include="Scripts\assets\angular-ui-bootstrap\ui-bootstrap-tpls-0.12.0.min.js" />
+    <Content Include="Scripts\assets\underscore\underscore-min.js" />
+    <Content Include="Scripts\assets\underscore\underscore.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\app\directives\navigation.tmpl.html" />
+    <Content Include="Views\Templates\InterviewFeedback.html" />
+    <Content Include="Views\Templates\IndentInfo.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\JsonpFormatter.cs" />
+    <Compile Include="App_Start\MiniProfiler.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Dashboard\OpenPositionsController.cs" />
+    <Compile Include="Controllers\Dashboard\TopOpeningsController.cs" />
+    <Compile Include="Controllers\Dashboard\OfferJoiningRatioController.cs" />
+    <Compile Include="Controllers\Indent\IndentActivitiesController.cs" />
+    <Compile Include="Controllers\Indent\IndentSearchController.cs" />
+    <Compile Include="Controllers\Indent\IndentTrackerController.cs" />
+    <Compile Include="Controllers\MasterData\DepartmentsController.cs" />
+    <Compile Include="Controllers\MasterData\InterviewPanelController.cs" />
+    <Compile Include="Controllers\MasterData\DepartmentRolesController.cs" />
+    <Compile Include="Controllers\MasterData\SkillsController.cs" />
+    <Compile Include="Controllers\MasterData\TypesController.cs" />
+    <Compile Include="Controllers\MasterData\FeaturesController.cs" />
+    <Compile Include="Controllers\MasterData\UploadController.cs" />
+    <Compile Include="Controllers\MasterData\BranchesController.cs" />
+    <Compile Include="Controllers\Profile\ConsultantsController.cs" />
+    <Compile Include="Controllers\Profile\InterviewFeedbacksController.cs" />
+    <Compile Include="Controllers\Profile\InterviewScheduleController.cs" />
+    <Compile Include="Controllers\Profile\ResumeController.cs" />
+    <Compile Include="Controllers\Profile\CandidateController.cs" />
+    <Compile Include="Controllers\Dashboard\ResumeSourcesController.cs" />
+    <Compile Include="Controllers\MasterData\MasterDataController.cs" />
+    <Compile Include="Controllers\Indent\IndentController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Users\AuthorizationController.cs" />
+    <Compile Include="Controllers\Users\ADUserController.cs" />
+    <Compile Include="Controllers\Users\UserSearchController.cs" />
+    <Compile Include="Controllers\Users\AccessFeaturesController.cs" />
+    <Compile Include="Controllers\Users\UserController.cs" />
+    <Compile Include="Extensions\AllowCrossSiteOriginAttribute.cs" />
+    <Compile Include="Extensions\AntiXssSanitizer.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\RequiredRoleAttribute.cs" />
+    <Compile Include="Filters\JsonExceptionFilterAttribute.cs" />
+    <Compile Include="Filters\ProfilingActionFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\AjaxMessageFilter.cs" />
+    <Compile Include="Helpers\BaseController.cs" />
+    <Compile Include="Extensions\ControllerExtensions.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
+    <Compile Include="Helpers\ProfilingViewEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\ActionDisposable.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\ionicons.eot" />
+    <Content Include="fonts\ionicons.ttf" />
+    <Content Include="fonts\ionicons.woff" />
+    <Content Include="fonts\Roboto-Thin-webfont.eot" />
+    <Content Include="fonts\Roboto-Thin-webfont.ttf" />
+    <Content Include="fonts\Roboto-Thin-webfont.woff" />
+    <None Include="Properties\PublishProfiles\iRecruit.pubxml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Home\Profile.cshtml" />
+    <Content Include="Scripts\assets\angular-route\angular-route.min.js.map" />
+    <Content Include="Views\Home\Indent.cshtml" />
+    <Content Include="Views\Home\Timeline.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Users.cshtml" />
+    <Content Include="Views\Home\Departments.cshtml" />
+    <Content Include="Views\Home\IndentTracker.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Shared\_LayoutWithSidebar.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\CookiePolicy.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\AccessDenied.cshtml" />
+    <Content Include="Views\Home\Skills.cshtml" />
+    <Content Include="Scripts\assets\plugins\toastr.min.js.map" />
+    <Content Include="Scripts\assets\angular-sanitize\angular-sanitize.min.js.map" />
+    <Content Include="Views\Home\Candidate.cshtml" />
+    <Content Include="Views\Home\ResumeSearch.cshtml" />
+    <Content Include="Views\Home\InterviewFeedback.cshtml" />
+    <Content Include="Views\Home\InterviewSchedule.cshtml" />
+    <Content Include="Scripts\assets\angular\angular.min.js.map" />
+    <Content Include="Scripts\assets\angular-cookies\angular-cookies.min.js.map" />
+    <Content Include="Scripts\assets\angular-messages\angular-messages.min.js.map" />
+    <Content Include="Scripts\assets\angular-resource\angular-resource.min.js.map" />
+    <Content Include="Scripts\assets\underscore\underscore-min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\iRecruit.Entity\iRecruit.Entity.csproj">
+      <Project>{835a34b3-57ef-4416-9c18-94e3bca32905}</Project>
+      <Name>iRecruit.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRecruit.Logging\iRecruit.Logging.csproj">
+      <Project>{a20c8fc5-a2f5-4978-8a7f-873e6117c935}</Project>
+      <Name>iRecruit.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRecruit.Models\iRecruit.Models.csproj">
+      <Project>{76095809-7e2a-4a8d-8f2d-3ba525bcf2c9}</Project>
+      <Name>iRecruit.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRecruit.Repository.Interfaces\iRecruit.Repository.Interfaces.csproj">
+      <Project>{9d8f4490-fa17-4bbf-a7a0-c46a9f4e444e}</Project>
+      <Name>iRecruit.Repository.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRecruit.Repository\iRecruit.Repository.csproj">
+      <Project>{0a58ce86-da3c-4fe9-b414-9e1ad527a005}</Project>
+      <Name>iRecruit.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRecruit.Security\iRecruit.Security.csproj">
+      <Project>{f641fb4c-78e3-46b6-81ca-be4c30fd191e}</Project>
+      <Name>iRecruit.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27806</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58637/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

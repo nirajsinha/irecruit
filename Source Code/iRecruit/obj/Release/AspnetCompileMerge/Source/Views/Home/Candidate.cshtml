@@ -1,0 +1,255 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<style>
+    .chosen-container .search-field{
+        height:34px;
+    }
+    
+</style>
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+            <a href="javascript:window.history.back();" class="back-button big"></a>     
+            <h1 style="font-size:36px;margin-left:80px; margin-top:45px">
+               Candidate
+            <small> {{cand.FirstName}}</small>
+            </h1>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+   
+             <form id="i_form1" name="i_form1" novalidate>
+              <div class="box box-primary">
+                    <div class="box-header bg-info">
+                        <h3 class="box-title">Candidate Information <span class="btn btn-info" ng-click="resetForm();">New Candidate</span>
+                    </h3>
+                    
+                    </div><!-- /.box-header -->
+                        <div class="box-body">
+					
+                              
+                            <div class="row clearfix">
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">*First Name</label>
+                                        <input class="form-control" id="fname" name="fname" placeholder="Enter first name" required type="text" ng-model="cand.FirstName" >
+                                        <p ng-show="i_form1.fname.$invalid && !$formPristine" class="has-error">First name is required.</p>
+                                    </div>
+						        </div>
+  	
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">Last Name</label>
+                                        <input class="form-control" id="lname" name="lname" placeholder="Enter last name" type="text" ng-model="cand.LastName" >
+                                    </div>
+						        </div>
+					        </div>
+
+                            <div class="row clearfix">
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">*Email</label>
+                                        <input class="form-control" id="email" name="email" placeholder="Enter email id" required type="email" ng-model="cand.Email" >
+                                        <p ng-show="i_form1.email.$invalid && !$formPristine" class="has-error">Email is required.</p>
+                                        <p ng-show="i_form1.email.$error.email && !i_form1.email.$pristine" class="has-error">Please enter valid email.</p>
+                                    </div>
+						        </div>
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">*Contact Number</label>
+                                        <input class="form-control" id="phone" name="phone" placeholder="Enter contact number" required type="text" ng-model="cand.ContactNumber" >
+                                        <p ng-show="i_form1.phone.$invalid && !$formPristine" class="has-error">Contact number is required.</p>
+                                    </div>
+						        </div>
+					        </div>
+
+                            <div class="row clearfix">
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">Current Title</label>
+                                        <input class="form-control" id="ctitle" name="ctitle" placeholder="Enter current title" type="text" ng-model="cand.CurrentTitle" >
+                                    </div>
+						        </div>
+                                <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">Current Company</label>
+                                        <input class="form-control" id="ccompany" name="ccompany" ng-model="cand.CurrentCompany" placeholder="Enter current company" type="text">
+                                    </div>
+						        </div>
+						        
+					        </div>
+                            <div class="form-group">
+                                <label for="technology">*Skills</label>
+                                <input id="tech" class="form-control" data-placeholder="Enter skills" style="min-height:38px;padding-top:10px;padding-bottom:10px" ng-model="cand.Skills" >
+                            </div>
+                            <div class="row clearfix">
+							    <div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="company">Current CTC</label>
+                                <input class="form-control" id="ctc" name="ctc" ng-model="cand.CurrentCTC" placeholder="Enter current CTC" type="number">
+                                <p ng-show="i_form1.ctc.$error.number &&  !i_form1.ctc.$pristine" class="has-error">Please enter numeric value.</p>
+                            </div>
+                                </div>
+                                <div class="col-md-6 column">
+							<div class="form-group">
+                                <label for="company">Expected CTC</label>
+                                <input class="form-control" id="ectc" name="ectc" ng-model="cand.ExpectedCTC" placeholder="Enter expected CTC" type="number">
+                                <p ng-show="i_form1.ectc.$error.number &&  !i_form1.ectc.$pristine" class="has-error">Please enter numeric value.</p>
+                            </div>
+</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <label class="checkbox" style="padding-right:15px;font-weight:normal">
+                                        <input name="passport" type="checkbox" value="1" ng-model="cand.Passport" /> Passport&nbsp;
+                                    </label>
+									<label class="checkbox" style="padding-right:15px;font-weight:normal" >
+                                        <input name="visa" type="checkbox" value="1" ng-model="cand.Visa" /> Visa&nbsp;
+                                    </label>
+									<label class="checkbox" style="padding-right:15px;font-weight:normal" >
+                                        <input name="travelled" type="checkbox" value="1" ng-model="cand.TravelledOnsiteBefore" /> Travelled Onsite Before&nbsp;
+                                    </label>
+                                </div>
+			                </div>
+                            <div class="row clearfix">
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label for="company">Current Location</label>
+                                        <input class="form-control" id="location" name="location" placeholder="Enter current location" type="text" ng-model="cand.CurrentLocation" >
+                                    </div>
+                                </div>
+                                <div class="col-md-3 column">
+                                    <div class="form-group">
+                                        <label for="company">*Total Experience</label>
+                                        <input class="form-control" id="exp" name="exp" required ng-model="cand.TotalExperience" placeholder="Enter total experience" type="number">
+                                        <p ng-show="i_form1.exp.$invalid && !$formPristine" class="has-error">Total experience is required.</p>
+                                        <p ng-show="i_form1.exp.$error.number && !i_form1.exp.$pristine" class="has-error">Total experience should be numeric.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 column">
+                                    <div class="form-group">
+                                        <label class="control-label">*Gender</label>
+                                        <div class="form-inline">
+                                            <label class="radio" style="padding-right:15px;font-weight:normal">
+                                                <input name="gender" type="radio" value="M" ng-model="cand.Gender" required /> Male&nbsp;
+                                            </label>
+									        <label class="radio" style="padding-right:15px;font-weight:normal" >
+                                                <input name="gender" type="radio" value="F" ng-model="cand.Gender" required /> Female&nbsp;
+                                            </label>
+                                        </div>
+                                        <p ng-show="i_form1.gender.$invalid && !$formPristine" class="has-error">Gender is required.</p>
+			                        </div>
+                                 </div>
+                            </div>
+							
+							<div class="row clearfix">
+						        <div class="col-md-6 column">
+							        <div class="form-group">
+                                        <label for="company">Aadhaar Number</label>
+                                        <input class="form-control" id="aadhaar" name="aadhaar" ng-model="cand.AadhaarNumber" placeholder="Enter aadhaar number" type="text" style="text-transform:uppercase" ng-minlength="12" ng-maxlength="12">
+                                        <p ng-show="i_form1.aadhaar.$invalid && !i_form1.aadhaar.$pristine" class="has-error">Please enter correct aadhaar number.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 column">
+							        <div class="form-group">
+                                        <label>Date of Birth</label>  
+                                        <div class="input-group" style="width:200px" >
+                                         <input type="text" class="form-control" datepicker-popup="{{dtpf}}" 
+                                                name="dob" ng-model="cand.DOB" is-open="datepickers.dtDob" 
+                                                datepicker-options="dateOptions" close-text="Close" />
+                                          <span class="input-group-btn">
+                                            <button class="btn btn-default" ng-click="open($event,'dtDob')">
+                                                <i class="glyphicon glyphicon-calendar"></i></button>
+                                          </span>
+                                        </div> 
+                                    </div> 
+							    </div>
+                                
+                            </div>
+							<div class="form-group">
+                                <label for="company">Certifications</label> (Please separate with ';' for multiple entries)
+                                <input type="text" class="form-control" id="certs" name="certs" ng-model="cand.Certifications" placeholder="Enter certifications if any"/>
+                            </div>
+							<div class="form-group">
+                                <label for="company">References</label>
+                                <div class="form-inline">
+                                    1. <input class="form-control" style="width:50%" id="ref1" name="ref1" ng-model="cand.Reference1" placeholder="Enter reference" type="text">
+                                    <label>Contact Number/Email:</label> <input class="form-control" style="width:300px;" id="ref1contact" name="ref1contact" ng-model="cand.Reference1Contact" placeholder="Enter reference contact" type="text">
+                                </div>
+                                <div class="form-inline">
+								    2. <input class="form-control" style="width:50%" id="ref2" name="ref2" ng-model="cand.Reference2" placeholder="Enter reference" type="text">
+                                    <label>Contact Number/Email:</label> <input class="form-control" style="width:300px;" id="ref2contact" name="ref2contact" ng-model="cand.Reference2Contact" placeholder="Enter reference contact" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">*Resume Source</label>
+                                <div class="form-inline">
+                                    <div class="input-group form-control" ng-repeat="i in resume_types">
+                                       <label class="radio" style="padding-right:15px;font-weight:normal">
+                                       <input type="radio" required ng-model="cand.ResumeSourceTypeID" value="{{i.TypeID}}" name="resource_source"/> {{i.Name}}
+                                       </label>
+                                    </div>&nbsp;
+                                </div>
+                                <p ng-show="i_form1.resource_source.$invalid && !$formPristine" class="has-error">Source is required.</p>
+			                </div>
+                            <div class="form-group">
+                                <label for="company">Resume Source Name</label>
+                                <input class="form-control" name="src_name" ng-required="cand.ResumeSourceTypeID == 34" ng-show="cand.ResumeSourceTypeID != 35" ng-model="cand.ResumeSourceDetail" placeholder="Enter source name">
+                                <select class="form-control" id="src" name="src" ng-show="cand.ResumeSourceTypeID == 35" ng-required="cand.ResumeSourceTypeID == 35" ng-model="cand.ResumeSource" ng-options="br.ConsultancyName for br in consultancies">
+                                    <option value="">--- Select Consuntancy ---</option>
+                                </select>
+                                <p ng-show="i_form1.src_name.$invalid && cand.ResumeSourceTypeID == 34 && !$formPristine" class="has-error">Employee name is required.</p>
+                                <p ng-show="i_form1.src.$invalid && cand.ResumeSourceTypeID == 35 && !$formPristine" class="has-error">Source name is required.</p>                                          
+                            </div>
+                            
+							
+							
+							<div class="form-group">
+                                <label for="file_data">Upload Resume</label>
+				
+                                <div class="form-inline">
+                                    <input file-upload style="display:inline-block; width:90%" class="form-control input-md" type="file" id="file_data" ng-required="true" name="file_data"> 
+                                    <a class="btn btn-info" ng-show="cand.ResumeVirtualPath && cand.ResumeVirtualPath != ''" ng-click="downloadResume()">Download</a>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+						        <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label>*Indent Number</label>
+                                        <div class="input-group">
+                                	        <input type="text" id="indent" name="indent" autocomplete="off" class="form-control" required ng-model="cand.IndentNumber" typeahead="i.value for i in searchIndents($viewValue)" typeahead-loading="loadingIndent" typeahead-on-select="onIndentSelected($item, $model, $label)">
+							                <span class="input-group-btn">
+                                                <button name="seach" id="search-indent" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                            </span>
+                                        </div>
+                                        <i ng-show="loadingIndent" class="glyphicon glyphicon-refresh"></i>
+								        <p ng-show="i_form1.indent.$error.required && !$formPristine" class="has-error">Indent number is required.</p>
+							        </div>
+                                </div>
+                                <div class="col-md-6 column">
+                                    <div class="form-group">
+                                        <label>Candidate Status</label>
+                                            <select class="form-control" id="status" name="status" ng-model="cand.CandidateStatus" ng-options="br.Name for br in cand_status_types">
+                                            <option value="">--- Select Status ---</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">About/Remarks</label>
+                                <textarea class="form-control" id="remarks" name="remarks" ng-model="cand.Remarks" placeholder="Enter remarks" rows="3"/>
+                            </div>
+                        </div><!-- /.box-body -->
+                    <br />
+                    <span class="btn btn-primary" ng-click="submitForm(i_form1);">Submit</span>&nbsp; 
+                  <span class="btn btn-danger" ng-click="cancelForm();">Cancel</span>
+                </div>                 
+                <!-- /.box -->
+              </form>
+    </section><!-- /.content -->
+

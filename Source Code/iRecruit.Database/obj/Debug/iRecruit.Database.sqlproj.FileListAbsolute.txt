@@ -1,0 +1,5 @@
+D:\iRecruit\Source Code\iRecruit.Database\bin\Debug\iRecruit.Database.dacpac
+D:\iRecruit\Source Code\iRecruit.Database\bin\Debug\iRecruit.Database.dll
+D:\iRecruit\Source Code\iRecruit.Database\bin\Debug\iRecruit.Database.pdb
+D:\iRecruit\Source Code\iRecruit.Database\obj\Debug\iRecruit.Database.dll
+D:\iRecruit\Source Code\iRecruit.Database\obj\Debug\iRecruit.Database.pdb

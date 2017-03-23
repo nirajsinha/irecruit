@@ -1,0 +1,26 @@
+2014-08-08 09:57:59.9057|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 09:57:59.9297|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:01:49.7107|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:01:49.7317|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:03:08.2744|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:03:08.2904|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:04:05.7204|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:04:05.7404|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:07:01.6254|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:07:01.6354|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:12:44.6494|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:12:44.6664|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 10:13:04.6644|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Web.Http.Request http://localhost:58637/api/indent/
+2014-08-08 10:13:04.6644|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-08-08 10:13:04.8394|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='HttpError', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2014-08-08 10:13:04.8594|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='HttpError', mediaType='application/json; charset=utf-8'
+2014-08-08 10:13:04.8624|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2014-08-08 10:13:04.8624|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2014-08-08 10:13:04.8624|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-08-08 10:13:04.8774|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2014-08-08 10:13:04.9134|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Web.Http.HttpError', type='HttpError', content-type='application/json; charset=utf-8'
+2014-08-08 10:13:05.0274|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/indent/ System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2014-08-08 14:37:54.6667|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 14:37:54.6757|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 16:43:04.4466|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-08-08 16:43:04.4626|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes

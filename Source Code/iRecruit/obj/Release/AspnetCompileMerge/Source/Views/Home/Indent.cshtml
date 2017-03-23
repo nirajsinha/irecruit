@@ -1,0 +1,395 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<style>
+    .chosen-container .search-field{
+        height:34px;
+    }
+    .steps-indicator {
+        position:relative;
+        padding-top:20px;
+    }
+        
+</style>
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+        <a href="javascript:window.history.back();" class="back-button big"></a>     
+        <h1 style="font-size:36px;margin-left:80px; margin-top:45px">
+           
+        @*<img src="~/images/documents.png" class="img-circle" alt="User Image">*@Indent
+        <small> {{indent.IndentNumber}}</small>
+        </h1>
+            </div>
+        <div class="col-lg-4 pull-right">
+            <div class="form-group" style="padding-top:40px;">
+                <div class="input-group">
+                    <input type="text" autocomplete="off" class="form-control input-group" ng-model="indent.Code" typeahead="i.value for i in searchIndents($viewValue)" typeahead-loading="loadingLocations" typeahead-on-select="loadSelectedIndent($item, $model, $label)">
+                        <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+                    
+                    <span class="input-group-btn">
+                        <button name="seach" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+                </div><!-- /.input group -->
+            </div>
+            </div>
+            
+        </div>
+</section>
+
+<section class="content">
+    <form id="i_form" name="i_form" novalidate>
+        <wizard on-finish="finished()">
+          <wz-step title="Indent Information">
+            <div class="box box-primary">
+                    <div class="box-header bg-info">
+                        <h3 class="box-title">Indent Information <span class="btn btn-info" ng-click="resetForm();">New Indent</span>
+                    </h3>
+                        <span ng-show="1!=1">{{indent.IndentID}}</span>
+                    </div><!-- /.box-header -->
+                        <div class="box-body" id="ind_section1">
+                        
+                            <div class="form-group">
+                                <label>*Branch</label>
+                                <select class="form-control" id="branch" name="branch" ng-model="indent.branch" required ng-options="b.Code for b in data.branches">
+                                    <option value="">--- Select Branch ---</option>     
+                                </select>
+                                <p ng-show="i_form.branch.$invalid && !$formPristine" class="has-error">Branch is required.</p>
+                                <div class="form-group">
+                                    (<small>{{indent.branch.City}}, {{indent.branch.State}}, {{indent.branch.Country}}</small>)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>*Department</label>
+                                <select class="form-control" id="dept" name="dept" ng-model="indent.dept" required ng-options="br.Name for br in data.departments">
+                                    <option value="">--- Select Department ---</option>
+                                </select>
+                                <p ng-show="i_form.dept.$invalid && !$formPristine" class="has-error">Department is required.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">*Client/Domain</label>
+                                <input class="form-control" id="client" name="client" placeholder="Enter client/domain name" required type="text" ng-model="indent.Client_Domain" >
+                                <p ng-show="i_form.client.$invalid && !$formPristine" class="has-error">Client/Domain name is required.</p>
+                            </div>
+                            <!-- radio -->
+                            <div class="form-group">
+                                <label class="control-label">*Project Status</label>
+                                <div class="form-inline">
+                                    <label class="radio" style="padding-right:15px;font-weight:normal" data-ng-repeat="ps in project_statuses">
+                                        <input name="projectstatus" type="radio" value="{{ps.TypeID}}" ng-model="indent.ProjectStatusID" required /> {{ps.Name}}&nbsp;
+                                    </label>
+                                </div>
+                                <p ng-show="i_form.projectstatus.$invalid && !$formPristine" class="has-error">Project status is required.</p>
+			                </div>
+                            <div class="form-group">
+                                <label for="technology">Technologies</label>
+                                <select id="tech" ng-model="indent.Technologies" data-placeholder=" " chosen multiple class="form-control" style="min-height:38px;padding-top:10px;padding-bottom:10px" ng-options="s.Code for s in data.technologies track by s.Code"></select>
+                            </div>
+                            <div class="form-group">
+                                <label>Technical Interview Panel (Round 1)</label>
+                                <select id="tech1" ng-model="indent.InterviewPanel1" data-placeholder=" " chosen multiple class="form-control" style="min-height:38px;padding-top:10px;padding-bottom:10px"  ng-options="t1.Name for t1 in data.interviewer_level1"> </select>
+                            </div>
+                            <div class="form-group">    
+                                <label>Technical Interview Panel (Round 2)</label>
+                                <select id="tech2" ng-model="indent.InterviewPanel2" data-placeholder=" " chosen multiple class="form-control" style="min-height:38px;padding-top:10px;padding-bottom:10px" ng-options="t2.Name for t2 in data.interviewer_level2"> </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label">*Reason for Resource Indent</label>
+                                <div class="form-inline">
+                                    <label class="radio" style="padding-right:15px;font-weight:normal" data-ng-repeat="ps in indent_reasons">
+                                        <input name="indentreason" type="radio" value="{{ps.TypeID}}" ng-model="indent.ReasonID" required/> {{ps.Name}}&nbsp;
+                                    </label>
+                                </div>
+                                <p ng-show="i_form.indentreason.$invalid && !$formPristine" class="has-error">Indent reason is required.</p>
+			                </div>
+                        
+                        </div><!-- /.box-body -->
+                    <br />
+                    <span class="btn btn-info" data-toggle="modal" wz-next="validateStep()">Next >> Requirement Specification</span>
+                </div>                 
+          </wz-step>
+          <wz-step title="Requirement Specification">
+            <div class="box box-primary">
+                    <div class="box-header bg-info">
+                        <h3 class="box-title">Requirement Specification</h3>
+                    </div><!-- /.box-header -->
+                        <div class="box-body" id="ind_section2">
+                         
+                            <div class="form-group">
+                                <label for="company">*Position Title</label>
+                                <input class="form-control" id="position" name="position" ng-model="indent.PositionTitle" required placeholder="Enter position titles" type="text">
+                                <p ng-show="i_form.position.$invalid && !$formPristine" class="has-error">Position title is required.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">*No. of Positions</label>
+                                <input class="form-control" id="numberpos" name="numberpos" required ng-model="indent.NoOfPositions" placeholder="Enter number of positions" type="number">
+                                <p ng-show="i_form.numberpos.$invalid && !$formPristine" class="has-error">Number of position is required and numeric values expected.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">*Experience</label>
+                                    <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-group">
+                                            Min Exp.<input class="form-control" required ng-model="indent.MinExperiance" name="minexp"  id="minexp" placeholder="Enter minimum experience" type="number">
+                                        </div>
+                                        <p ng-show="i_form.minexp.$invalid && !$formPristine" class="has-error">Minimum experience is required and numeric values expected.</p>
+                                        <p ng-show="indent.MinExperiance > indent.MaxExperiance" class="has-error">Minimum experience cannot be more than Maximum experience.</p>
+                                    </div><!-- /.col-lg-6 -->
+                                    <div class="col-lg-6">
+                                        <div class="input-group">
+                                            Max Exp.<input class="form-control" required ng-model="indent.MaxExperiance" name="maxexp"  id="maxexp" placeholder="Enter maximum experience" type="number">
+                                        </div>
+                                        <p ng-show="i_form.maxexp.$invalid && !$formPristine" class="has-error">Maximum experience is required and numeric values expected.</p>
+                                    </div><!-- /.col-lg-6 -->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Visa</label>
+                                <div class="form-inline">
+                                    <label class="radio" style="padding-right:15px;font-weight:normal" data-ng-repeat="ps in visa_types">
+                                        <input name="indentvisa" type="radio" value="{{ps.TypeID}}" ng-model="indent.VisaType" /> {{ps.Name}}&nbsp;
+                                    </label>
+                                </div>
+			                </div>    
+                            <div class="form-group">
+                                <label for="company">Reporting Manager</label>
+                                <input class="form-control" id="manager" name="manager" ng-model="indent.ReportingManager" placeholder="Enter reporting manager" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Location of Deployment</label>
+                                <input class="form-control" id="deploylocation" name="deploylocation" ng-model="indent.DeploymentLocation" placeholder="Enter location of deployment" type="text">
+                            </div> 
+                            <div class="form-group">
+                                <label>*Target Join Date</label>  
+                                <div class="input-group" style="width:200px" >
+                                 <input type="text" class="form-control" datepicker-popup="{{dtpf}}" 
+                                        name="doj" id="doj" ng-model="indent.TargetJoinDate" is-open="datepickers.dtDoj" 
+                                        datepicker-options="dateOptions" ng-required="indent.DisableIndenterAccess == 0" date-disabled="disabled(date, mode)" close-text="Close" />
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" ng-click="open($event,'dtDoj')">
+                                        <i class="glyphicon glyphicon-calendar"></i></button>
+                                  </span>
+                                </div> 
+                                
+                                <p ng-show="i_form.doj.$invalid && !$formPristine" class="has-error">Date of joining is required.</p>
+                            </div> 
+                           
+                         
+                        </div>
+                    <br />
+                    <span class="btn btn-info"  data-toggle="modal" wz-next>Next >> Job Description</span>
+                  </div><!-- /.box-body -->
+          </wz-step>
+          <wz-step title="Job Description">
+            <div class="box box-primary">
+                <div class="box-header bg-info">
+                <h3 class="box-title">Job Descriptions</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body" id="ind_section3">
+                <div class="form-group">
+                <label class="control-label">Requirement Location</label>
+                <div class="form-inline">
+                    <label class="radio" style="padding-right:15px;font-weight:normal" data-ng-repeat="ps in resource_locations">
+                        <input name="requirementLocaion" type="radio" value="{{ps.TypeID}}" ng-model="indent.LocationTypeID" /> {{ps.Name}}&nbsp;
+                    </label>
+                </div>
+			</div> 
+                <div class="form-group">
+            <label class="control-label">*Employment Type</label>
+            <div class="form-inline">
+                <label class="radio" style="padding-right:15px;font-weight:normal" data-ng-repeat="ps in employment_types">
+                    <input name="employmenttype" type="radio" value="{{ps.TypeID}}" required ng-model="indent.EmploymentTypeID"/> {{ps.Name}}&nbsp;
+                </label>
+                , enter duration in months <input id="contractMon" name="contractMon" ng-model="indent.ContractMonths" ng-disabled="indent.EmploymentTypeID != 9" type="text" integer/>
+            </div>
+             <p ng-show="i_form.employmenttype.$invalid && !$formPristine" class="has-error">Employement type is required.</p>                     
+             <p ng-show="i_form.contractMon.$invalid && !$formPristine" class="has-error">Contract months is required.</p>                     
+			</div>
+                <div class="form-group">
+            <label class="control-label">*Staffing Mode</label>
+            <div class="form-inline">
+                <label class="radio" style="padding-right:15px;font-weight:normal" data-ng-repeat="ps in staffing_mode">
+                    <input name="staffingmode" type="radio" value="{{ps.TypeID}}" required ng-model="indent.StaffingModeID" /> {{ps.Name}}&nbsp;
+                </label>
+            </div>
+            <p ng-show="i_form.staffingmode.$invalid && !$formPristine" class="has-error">Staffing mode is required.</p>                                           
+			</div>
+                <div class="form-group">
+                <label>Job Description</label>
+                <textarea ng-required='!indent.uploadjobdescription' ng-model="indent.JobDescription" rich-text-editor id="jobdescription" name="jobdescription" class="form-control textarea" style="width:100%; height:300px;"></textarea>
+                
+                    <p ng-show="i_form.jobdescription.$invalid && !$formPristine" class="has-error">Job description is required.</p>   
+            </div>
+            <div class="form-group">
+                <label for="file_data">Upload Job Description</label>
+				
+                <div class="form-inline">
+                    <input file-upload style="display:inline-block; width:90%" class="form-control input-md" type="file" id="file_data" ng-required="true" name="file_data"> 
+                    <a class="btn btn-info" ng-show="indent.JDUrl && indent.JDUrl != ''" ng-click="downloadJobDescription()">Download</a>
+                   <ul>
+                        <li ng-repeat="file in files">{{file}} <span class="btn btn-danger" ng-click="deleteFile($index)">Remove</span> </li>
+                   </ul>
+                </div>
+            </div>
+
+            </div>
+            <br />
+            <span class="btn btn-info"  data-toggle="modal" wz-next >Next >> Skill Sets</span>
+                </div>
+          </wz-step>
+          <wz-step title="Skill Sets">
+            <div class="box box-primary">
+                    <div class="box-header bg-info">
+                        <h3 class="box-title">Skill Sets</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body" id="ind_section4">
+                    
+                     <div class="form-group" style="margin-bottom:0px;">
+                <label>*Technical Skills</label>
+                 <textarea class="form-control" id="tskill" name="tskill" required ng-model="indent.TechnicalSkills"  style="width:100%; height:150px;"></textarea>
+                 <p ng-show="i_form.tskill.$invalid && !$formPristine" class="has-error">Technical skills are required.</p>
+            </div>
+                     <div class="form-group" style="margin-bottom:0px;">
+                <label>*Behavioural Skills</label>
+                <textarea class="form-control" id="bskill" name="bskill" required ng-model="indent.BehaviouralSkills"    style="width:100%; height:150px;"></textarea>
+                 <p ng-show="i_form.bskill.$invalid && !$formPristine" class="has-error">Behavioural skills are required.</p>
+            </div>
+                     <div class="form-group" style="margin-bottom:0px;">
+                 <label>Qualification</label>
+                <input class="form-control" id="qual" name="qual" ng-model="indent.Qualification" type="text">
+                
+            </div>
+                     <div class="form-group" style="margin-bottom:0px;">
+                 <label>Any others</label>
+                <input class="form-control"  ng-model="indent.Others"  type="text">
+            </div><br />
+                     <div class="callout">
+                     <h3>Indenter</h3>
+                    <!-- form start -->
+                        <div class="form-group">
+                            <label for="indenter">Name</label>
+                            <input class="form-control" id="indenter" placeholder="Enter indenter name" required  ng-model="indent.Indentor" type="text" value="data.UserInfo.Name">
+                            <label>Indent Date</label>  
+                            <div class="input-group" style="width:200px" >
+                             <input type="text" class="form-control" datepicker-popup="{{dtpf}}" 
+                                    id="idate" name="idate" ng-model="indent.IndentDate" is-open="datepickers.dtIndent" 
+                                    datepicker-options="dateOptions" date-disabled="disabled(date, mode)" close-text="Close" />
+                              <span class="input-group-btn">
+                                <button id="idate_btn" class="btn btn-default" ng-click="open($event,'dtIndent')">
+                                    <i class="glyphicon glyphicon-calendar"></i></button>
+                              </span>
+                               
+                            </div> 
+                            
+                            <label for="comment">Remarks</label>
+                            <textarea class="form-control" rows="5" name="comment" id="comment" ng-model="indent.IndentorRemarks" ng-required='indent.Indent_Status != 15'></textarea>    
+                            <p ng-show="i_form.comment.$invalid && !$formPristine" class="has-error">Remarks is required.</p>
+                        </div>
+                    </div>
+                    
+                    <br />
+                    <span class="btn btn-info"  data-toggle="modal" wz-next>Next >> Approval</span>
+                    </div>
+                </div>
+          </wz-step>
+          <wz-step title="Approval">
+            <div class="box box-primary">
+                    <div class="box-header bg-info">
+                        <h3 class="box-title">Approvals</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                   <div class="callout callout-warning" id="fh_section">
+                       <h3>Function Head</h3>
+                        <div class="form-group">
+                            <label for="indenter">Name</label>
+                            <input class="form-control" id="fh"  ng-required="indent.DisableFHAccess == 0" ng-model="indent.FunctionHead" placeholder="Enter name" type="text" >
+                            <label for="fhdate">Approve/Reject/Discussion Date</label>
+                            <div class="input-group" style="width:200px" >
+                             <input type="text" class="form-control" datepicker-popup="{{dtpf}}" 
+                                    name="fhdate" id="fhdate" ng-model="indent.FunctionHeadStatusDate" is-open="datepickers.dtFh" 
+                                    datepicker-options="dateOptions" date-disabled="disabled(date, mode)" close-text="Close" />
+                              <span class="input-group-btn">
+                                <button id="fhdate_btn" class="btn btn-default" ng-click="open($event,'dtFh')">
+                                    <i class="glyphicon glyphicon-calendar"></i></button>
+                              </span>
+                            </div>
+                            <label for="rem-fh">Remarks</label>
+                            <textarea class="form-control" rows="5" id="rem-fh" ng-model="indent.FunctionHeadRemarks"></textarea>    
+                        </div>
+                    </div>
+                
+                   <div class="callout callout-info"  id="svp_section">
+                       <h3>Senior Vice President</h3>
+                        <div class="form-group">
+                            <label for="indenter">Name</label>
+                            <input class="form-control" id="svp" ng-required="indent.DisableSVPAccess == 0" ng-model="indent.SeniorVicePresident" placeholder="Enter name" type="text">
+                            <label for="svpdate">Approve/Reject/Discussion Date</label>
+                            <div class="input-group" style="width:200px" >
+                             <input type="text" class="form-control" datepicker-popup="{{dtpf}}" 
+                                    name="svpdate" id="svpdate" ng-model="indent.SeniorVicePresidentStatusDate" is-open="datepickers.dtSvp" 
+                                    datepicker-options="dateOptions" date-disabled="disabled(date, mode)" close-text="Close" />
+                              <span class="input-group-btn">
+                                <button id="svpdate_btn" class="btn btn-default" ng-click="open($event,'dtSvp')">
+                                    <i class="glyphicon glyphicon-calendar"></i></button>
+                              </span>
+                            </div>
+                            <label for="rem-svp">Remarks</label>
+                            <textarea class="form-control textarea" rows="5" id="rem-svp" ng-model="indent.SeniorVicePresidentRemarks"></textarea>        
+                        </div>
+                       
+                    </div>
+                
+                    <br />
+                    <span class="btn btn-info"  data-toggle="modal" wz-next>Next >> Submission</span>
+                    </div>
+                </div>
+          </wz-step>
+          <wz-step title="Submission">
+            <div class="box box-primary">               <!-- right column -->
+                <div class="box-header bg-info">
+                        <h3 class="box-title">Submission</h3>
+                    </div><!-- /.box-header -->
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="control-label">Select Status</label>
+                        <div class="form-inline">
+                            <div class="input-group form-control" ng-repeat="i in indent_statuses">
+                                <div ng-if="i.Code == '1' || i.Code == '2'">
+                                    <label class="radio" style="padding-right:15px;font-weight:normal">
+                                        <input type="radio" required ng-disabled="indent.DisableIndenterAccess == 1" ng-model="indent.Indent_Status" value="{{i.TypeID}}" name="indent_status" /> {{i.Description}}
+                                    </label>&nbsp;
+                               </div>
+                                <div ng-if="i.Code == '3' || i.Code == '4' || i.Code == '5' || i.Code == '6'">
+                                  <label class="radio" style="padding-right:15px;font-weight:normal">
+                                    <input type="radio" required ng-disabled="indent.DisableFHAccess == 1 && indent.DisableSVPAccess == 1" ng-model="indent.Indent_Status" value="{{i.TypeID}}" name="indent_status" /> {{i.Description}}
+                                  </label>
+                               </div>
+                            </div>&nbsp;
+                        </div>
+                        <p ng-show="i_form.indent_status.$invalid && !$formPristine" class="has-error">Status is required.</p>
+			        </div>
+                    <br />
+                    <div class="row">
+                    <!--<span class="btn btn-primary" ng-disabled="Indent_form6.$invalid" ng-click="submitForm(i_form.$valid && i_form.$valid && i_form.$valid && i_form.$valid && i_form.$valid && i_form.$valid);">Submit</span>&nbsp; -->
+                    <span class="btn btn-primary" ng-disabled="i_form.indent_status.$invalid" ng-click="submitForm(i_form);">Submit</span>&nbsp; 
+                    <span class="btn btn-info" ng-click="cancelForm();">Cancel</span>&nbsp;
+                    <span class="btn btn-danger" data-toggle="modal" ng-click="goBack()"><< Start again - Indent Information</span>
+                        <br />
+                    </div>
+                </div>
+            </div>
+          </wz-step>
+        </wizard>
+    </form>
+    </section><!-- /.content -->
+
+
+
+@section scripts{
+  <script>
+
+  </script>
+}

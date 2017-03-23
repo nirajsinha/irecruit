@@ -1,0 +1,40 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.dll.config
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\EntityFramework.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\EntityFramework.SqlServer.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Data.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.Interfaces.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\Omu.ValueInjecter.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Data.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Models.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.Interfaces.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\EntityFramework.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\EntityFramework.SqlServer.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\bin\Release\Omu.ValueInjecter.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\obj\Release\iRecruit.Repository.csprojResolveAssemblyReference.cache
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\obj\Release\iRecruit.Repository.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository\obj\Release\iRecruit.Repository.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.dll.config
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\EntityFramework.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\EntityFramework.SqlServer.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Data.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.Interfaces.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\Omu.ValueInjecter.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Data.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\iRecruit.Repository.Interfaces.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\EntityFramework.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\EntityFramework.SqlServer.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\bin\Release\Omu.ValueInjecter.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\obj\Release\iRecruit.Repository.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\obj\Release\iRecruit.Repository.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository\obj\Release\iRecruit.Repository.pdb

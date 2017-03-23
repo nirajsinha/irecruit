@@ -1,0 +1,18 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Repository.Interfaces.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Repository.Interfaces.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Models.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\obj\Release\iRecruit.Repository.Interfaces.csprojResolveAssemblyReference.cache
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\obj\Release\iRecruit.Repository.Interfaces.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Repository.Interfaces\obj\Release\iRecruit.Repository.Interfaces.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Repository.Interfaces.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Repository.Interfaces.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\bin\Release\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\obj\Release\iRecruit.Repository.Interfaces.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\obj\Release\iRecruit.Repository.Interfaces.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Repository.Interfaces\obj\Release\iRecruit.Repository.Interfaces.pdb

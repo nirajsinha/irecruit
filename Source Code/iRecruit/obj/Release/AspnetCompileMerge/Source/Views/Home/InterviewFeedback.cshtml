@@ -1,0 +1,555 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<style>
+    .popover {
+    max-width: 800px;
+    /* If max-width does not work, try using width instead */
+    width: 800px; 
+    }
+</style>
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+            <a href="javascript:window.history.back();" class="back-button big"></a>     
+            <h1 style="font-size:36px;margin-left:80px; margin-top:45px">
+               Interview Feedback
+            <small> Round {{pageData.InterviewRound}}</small>
+            </h1>
+        </div>
+        <div class="col-lg-4 pull-right">
+            <div class="form-group" style="padding-top:40px;">
+                
+                Enter Candidate#:
+                <div class="input-group">
+                    <input name="q" class="form-control input-group" placeholder="Enter Candidate# printed on resume" type="text" ng-keypress="executeSearch($event);" ng-model="pageData.CandidateID">
+                    <span class="input-group-btn">
+                        <button class="btn btn-flat" ng-click="loadCandidate();"><i class="fa fa-search"></i></button>
+                    </span>
+                </div><!-- /.input group -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <form id="i_form1" name="i_form1" novalidate>
+         <div class="box box-info" >
+            <div class="box-header bg-info">
+                <!-- tools box -->
+                <div class="pull-right box-tools" ng-show="pageData.InterviewRound == 2">
+                    <span ng-show="false"> {{ pageData.feedback.InterviewFeedbacksID}}</span><button id="round1feedback" class="btn btn-danger" ng-click="openOldFeedback('lg')" >See Round 1 Feedback</button>
+                </div><!-- /. tools -->
+                <span class="box-title">Technical Interview Assessment Form</span>
+            </div><!-- /.box-header -->
+             <div class="box-body">
+                 <div class="row clearfix">
+                     <div class="col-md-6 column">
+                         <div class="form-group">
+                             <label for="company">Candidate Name</label>
+                             <input class="form-control" name="cname" type="text" ng-model="pageData.CandidateName" ng-readonly>
+                         </div>
+                     </div>
+                     <div class="col-md-6 column">
+                         <div class="form-group">
+                             <label for="company">Position for which this assessment is being done</label>
+                             <input class="form-control" name="pos" type="text" ng-model="pageData.feedback.PositionFor">
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row clearfix">
+                     <div class="col-md-6 column">
+                         <div class="form-group">
+                             <label for="company">Total Experience</label>
+                             <input class="form-control" type="text" ng-model="pageData.TotalExperience" ng-readonly>
+                         </div>
+                     </div>
+                     <div class="col-md-6 column">
+                         <div class="form-group">
+                             <label for="company">Relevant Experience</label>
+                             <input class="form-control" name="relexp" placeholder="Enter relevent experience" type="text" ng-model="pageData.feedback.ReleventExperience">
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row clearfix">
+                     <div class="col-lg-12">
+                         <div class="form-group">
+                             <label>If you are discounting experience, please provide reason</label>
+                             <input class="form-control" name="relreason" ng-required="pageData.TotalExperience != pageData.feedback.ReleventExperience" placeholder="Enter experience discount reason" type="text" ng-model="pageData.feedback.ReleventExperienceDiscountReason">
+                             <p ng-show="i_form1.relreason.$error.required && !$formPristine" class="has-error">Please enter reason for changing relevent experience</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row clearfix">
+                     <div class="col-lg-12">
+                         <div class="form-group">
+                             <label>*Interviewer Name</label><small>(Separate with comma, for multiple interviewers)</small>
+                             <input class="form-control" name="interviwers" required placeholder="Enter interviewer name" type="text" ng-model="pageData.feedback.InterviewerName">
+                             <p ng-show="i_form1.interviwers.$error.required && !$formPristine" class="has-error">Please enter interviewer name</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row clearfix">
+                     <div class="col-lg-12">
+                         <div class="form-group">
+                             <label>Technical Skills Assessment</label>
+                             <p>Please rate the candidate from 1-4 scale. Identify the applicable skill sets for the position interviewed from the Tech Interpretation Rating Scale chart**</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row clearfix">
+                     <div class="col-lg-12">
+                         <div class="box box-danger">
+                             <div class="box-header bg-danger">
+                                 <div class="pull-right box-tools">
+                                     <button id="btn_interpretations" class="btn btn-danger infowindow" data-container="body" pop-over items="rating_interpretations" title="**Interpretation of Tech Rating Scale">**Interpretation of Tech Rating Scale</button>
+                                 </div>
+                                 <span class="box-title">Technical Skills Assessment</span>
+                             </div><!-- /.box-header -->
+                             <div class="box-body">
+                                 <table class="table table-hover">
+                                     <tbody>
+                                         <tr>
+                                             <th>Parameters</th>
+                                             <th class="text-center">Knowledge Areas</th>
+                                             <th class="text-center">**Level</th>
+                                             <th class="text-center">Comments</th>
+                                         </tr>
+                                         <tr>
+                                             <td class="col-lg-2">Technology Knowledge</td>
+                                             <td class="col-lg-4">
+                                                 <input class="form-control" name="tech" type="text" ng-required="pageData.feedback.TechKnowledgeAreasLevel > 0" ng-model="pageData.feedback.TechKnowledgeAreas">
+                                                 <p ng-show="i_form1.tech.$error.required" class="has-error">Please enter area info</p>
+                                             </td>
+                                             <td class="col-lg-1">
+                                                 <input class="form-control" name="techlevel" type="text" valid-technical-rating ng-model="pageData.feedback.TechKnowledgeAreasLevel">
+                                                 <p ng-show="!i_form1.techlevel.$valid" class="has-error">invalid level</p>
+
+                                             </td>
+                                             <td class="col-lg-5">
+                                                 <input class="form-control" name="techcomment" type="text" ng-model="pageData.feedback.TechKnowledgeAreasComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>Analysis</td>
+                                             <td>
+                                                 <input class="form-control" name="analysis" type="text" ng-required="pageData.feedback.AnalysisAreasLevel > 0" ng-model=" pageData.feedback.AnalysisAreas">
+                                                 <p ng-show="i_form1.analysis.$error.required" class="has-error">Please enter area info</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="analysislevel" type="text" valid-technical-rating ng-model="pageData.feedback.AnalysisAreasLevel">
+                                                 <p ng-show="!i_form1.analysislevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="analysiscomment" type="text" ng-model="pageData.feedback.AnalysisAreasComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>Design</td>
+                                             <td>
+                                                 <input class="form-control" name="design" type="text" ng-required="pageData.feedback.DesignAreasLevel > 0" ng-model="pageData.feedback.DesignAreas">
+                                                 <p ng-show="i_form1.design.$error.required" class="has-error">Please enter area info</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="designlevel" type="text" valid-technical-rating ng-model="pageData.feedback.DesignAreasLevel">
+                                                 <p ng-show="!i_form1.designlevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="designcomment" type="text" ng-model="pageData.feedback.DesignAreasComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>Coding</td>
+                                             <td>
+                                                 <input class="form-control" name="coding" type="text" ng-required="pageData.feedback.CodingAreasLevel > 0 " ng-model="pageData.feedback.CodingAreas">
+                                                 <p ng-show="i_form1.coding.$error.required" class="has-error">Please enter area info</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="codinglevel" type="text" valid-technical-rating ng-model="pageData.feedback.CodingAreasLevel">
+                                                 <p ng-show="!i_form1.codinglevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="codingcomment" type="text" ng-model="pageData.feedback.CodingAreasComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>Database</td>
+                                             <td>
+                                                 <input class="form-control" name="database" type="text" ng-required="pageData.feedback.DatabaseAreasLevel > 0" ng-model="pageData.feedback.DatabaseAreas">
+                                                 <p ng-show="i_form1.database.$error.required" class="has-error">Please enter area info</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="databaselevel" type="text" valid-technical-rating ng-model="pageData.feedback.DatabaseAreasLevel">
+                                                 <p ng-show="!i_form1.databaselevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="databasecomment" type="text" ng-model="pageData.feedback.DatabaseAreasComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>Testing</td>
+                                             <td>
+                                                 <input class="form-control" name="testing" type="text" ng-required="pageData.feedback.TestingAreasLevel > 0" ng-model="pageData.feedback.TestingAreas">
+                                                 <p ng-show="i_form1.testing.$error.required" class="has-error">Please enter area info</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="testinglevel" type="text" valid-technical-rating ng-model="pageData.feedback.TestingAreasLevel">
+                                                 <p ng-show="!i_form1.testinglevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td>
+                                                 <input class="form-control" name="testingcomment" type="text" ng-model="pageData.feedback.TestingAreasComments">
+                                             </td>
+                                         </tr>
+
+                                     </tbody>
+                                 </table>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row clearfix">
+                     <div class="col-lg-12">
+                         <div class="box box-success">
+                             <div class="box-header bg-success">
+                                 <span class="box-title">Soft Skills Assessment</span>
+                             </div><!-- /.box-header -->
+                             <div class="box-body">
+                                 <table class="table table-hover" id="indents_table">
+                                     <tbody>
+                                         <tr>
+                                             <th>Parameters</th>
+                                             <th class="text-center">Rating</th>
+                                             <th class="text-center">Comments</th>
+                                         </tr>
+                                         <tr>
+                                             <td class="col-lg-3">Result Orientation</td>
+
+                                             <td class="col-lg-1">
+                                                 <input class="form-control" name="resultlevel" type="text" valid-technical-rating ng-model="pageData.feedback.ResultOrientationLevel">
+                                                 <p ng-show="!i_form1.resultlevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td class="col-lg-8">
+                                                 <input class="form-control" type="text" ng-model="pageData.feedback.ResultOrientationComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="col-lg-3">Communication Skills (Oral)</td>
+
+                                             <td class="col-lg-1">
+                                                 <input class="form-control" name="commlevel" type="text" valid-technical-rating ng-model="pageData.feedback.CommunicationSkillsLevel">
+                                                 <p ng-show="!i_form1.commlevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td class="col-lg-8">
+                                                 <input class="form-control" type="text" ng-model="pageData.feedback.CommunicationSkillsComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="col-lg-3">Team Working</td>
+
+                                             <td class="col-lg-1">
+                                                 <input class="form-control" name="teamlevel" type="text" valid-technical-rating ng-model="pageData.feedback.TeamWorkingLevel">
+                                                 <p ng-show="!i_form1.teamlevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td class="col-lg-8">
+                                                 <input class="form-control" type="text" ng-model="pageData.feedback.TeamWorkingComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="col-lg-3">Leadership Capability</td>
+
+                                             <td class="col-lg-1">
+                                                 <input class="form-control" name="leadlevel" type="text" valid-technical-rating ng-model="pageData.feedback.LeadershipCapabilityLevel">
+                                                 <p ng-show="!i_form1.leadlevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td class="col-lg-8">
+                                                 <input class="form-control" type="text" ng-model="pageData.feedback.LeadershipCapabilityComments">
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td class="col-lg-3">Attitude</td>
+
+                                             <td class="col-lg-1">
+                                                 <input class="form-control" name="attitudelevel" type="text" valid-technical-rating ng-model="pageData.feedback.AttitudeLevel">
+                                                 <p ng-show="!i_form1.attitudelevel.$valid" class="has-error">invalid level</p>
+                                             </td>
+                                             <td class="col-lg-8">
+                                                 <input class="form-control" type="text" ng-model="pageData.feedback.AttitudeComments">
+                                             </td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 
+                 <div class="callout callout-info">
+                     <h3>Panel Remarks</h3>
+                     <div class="row clearfix">
+                         <div class="col-lg-12 form-group">
+                             <p>Overall Rating of the candidate on technical and behavioral skills in a scale of 1 to 4: <strong>1=Inadequate; 2=Just acceptable; 3=Acceptable; 4=Good</strong></p>
+                         </div>
+                     </div>
+                     <div class="row clearfix">
+                             <div class="col-md-3 column">
+                                 <div class="form-group">
+                                     <label for="company">Overall Level</label>
+                                     <input class="form-control" name="overalllevel" type="text" valid-technical-rating ng-model="pageData.feedback.OverallRatingLevel">
+                                     <p ng-show="!i_form1.overalllevel.$valid && !$formPristine" class="has-error">Please enter valid overall level</p>
+                                 </div>
+                             </div>
+                             <div class="col-md-9 column">
+                                 <div class="form-group">
+                                     <label for="company">Comments</label>
+                                     <input class="form-control" placeholder="Enter overall comments" type="text" ng-model="pageData.feedback.OverallRatingComments">
+                                 </div>
+                             </div>
+
+                         </div>
+                     <div class="row clearfix">
+                             <div class="col-lg-12">
+                                 <div class="form-inline">
+                                     <label class="control-label">Recomendation for Selection (for the position interviewed): &nbsp;</label>
+                                     <label class="radio" style="padding-right:15px;font-weight:normal">
+                                         <input name="rectype" type="radio" value="1" ng-model="pageData.feedback.PositionRecomended" required /> Yes&nbsp;
+                                     </label>
+                                     <label class="radio" style="padding-right:15px;font-weight:normal">
+                                         <input name="rectype" type="radio" value="0" ng-model="pageData.feedback.PositionRecomended" required /> No&nbsp;
+                                     </label>
+                                     <p ng-show="i_form1.rectype.$error.required && !$formPristine" class="has-error">Please select recommendation for selection</p>
+                                 </div>
+                             </div>
+                         </div><br />
+                     <div class="row clearfix" ng-show="pageData.feedback.OverallRatingLevel <= 2 && pageData.feedback.PositionRecomended == 1">
+                             <div class="col-lg-12">
+                                 <div class="form-group">
+                                     <label for="company">Reason for selection</label>
+                                     <input class="form-control" name="reason" ng-required="pageData.feedback.OverallRatingLevel <= 2 && pageData.feedback.PositionRecomended == 1" placeholder="Enter reason for selection" type="text" ng-model="pageData.feedback.SelectionReason">
+                                     <p ng-show="i_form1.reason.$error.required" class="has-error">Please justify reason for selection</p>
+                                 </div>
+                             </div>
+                         </div>
+                     <div class="row clearfix">
+                             <div class="col-md-6 column">
+                                 <div class="form-group">
+                                     <label for="company">Position Recommended</label>
+                                     <input class="form-control" type="text" ng-model="pageData.feedback.PositionSuggested" />
+                                 </div>
+                             </div>
+                             <div class="col-md-6 column">
+                                 <div class="form-group">
+                                     <label for="company">Alternate Competency Basket</label>
+                                     <input class="form-control" type="text" ng-model="pageData.feedback.AlternaticeCompetancy" />
+                                     <p> (In case the candidate fits into any other competency basket)</p>
+                                 </div>
+                             </div>
+                         </div>
+                     <div class="row clearfix">
+                             <div class="col-md-6 column">
+                                 <div class="form-group">
+                                     <label for="company">Positives</label>
+                                     <textarea class="form-control" rows="3" name="positive" ng-model="pageData.feedback.PositivesRemarks"></textarea>
+                                 </div>
+                             </div>
+                             <div class="col-md-6 column">
+                                 <div class="form-group">
+                                     <label for="company">Gaps / Concerns</label>
+                                     <textarea class="form-control" rows="3" name="gaps" ng-model="pageData.feedback.ConcernsGaps" />
+                                 </div>
+                             </div>
+                         </div>
+                     <h3>Training Needs</h3>
+                     <div class="row clearfix">
+                             <div class="col-md-6 column">
+                                 <div class="form-group">
+                                     <label for="company">Technical Skills</label>
+                                     <textarea class="form-control" rows="3" name="techtrain" ng-model="pageData.feedback.TrainingsNeededTechnical" />
+                                 </div>
+                             </div>
+                             <div class="col-md-6 column">
+                                 <div class="form-group">
+                                     <label for="company">Behavioral Skills</label>
+                                     <textarea class="form-control" rows="3" name="behatrain" ng-model="pageData.feedback.TrainingNeededBehavioral" />
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     </div><!-- /.box-body -->
+                     <br />
+                    <span class="btn btn-success" ng-click="submitForm(i_form1,0);" id="btnsave">Save</span>&nbsp;        
+                    <span class="btn btn-primary" ng-click="submitForm(i_form1,1);" id="btnsubmit">Submit</span>&nbsp;
+                     <span class="btn btn-danger" ng-click="cancelForm();" id="btncancel">Cancel</span>
+
+                 </div>
+</form>
+</section>
+<script type="text/ng-template" id="oldFeedback.html">
+    <div class="modal-header">
+        <h3 class="modal-title">Round 1 Feedback by {{::feedback.InterviewerName}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row clearfix">
+            <div class="col-lg-12 form-group">
+                <div class="box box-info">
+                    <div class="box-header bg-info">
+                        <span class="box-title">Technical Assessment</span>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-3"><strong>Areas</strong></div>
+                                <div class="col-lg-1 text-center"><strong>Level</strong></div>
+                                <div class="col-lg-5"><strong>Comments</strong></div>
+                            </div>                            
+                        </div>                    
+                        <div class="row">                    
+                            <div class="col-lg-12" ng-show="feedback.TechKnowledgeAreasLevel>0">
+                                <div class="col-lg-3">Technology Knowledge</div>
+                                <div class="col-lg-3">{{::feedback.TechKnowledgeAreas}}</div>
+                                <div class="col-lg-1 text-center">{{::feedback.TechKnowledgeAreasLevel}}</div>
+                                <div class="col-lg-5"> {{::feedback.TechKnowledgeAreasComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.AnalysisAreasLevel>0">
+                                <div class="col-lg-3">Analysis</div>
+                                <div class="col-lg-3">{{::feedback.AnalysisAreas}}</div>
+                                <div class="col-lg-1 text-center">{{::feedback.AnalysisAreasLevel}}</div>
+                                <div class="col-lg-5"> {{::feedback.AnalysisAreasComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.DesignAreasLevel>0">
+                                <div class="col-lg-3">Design</div>
+                                <div class="col-lg-3">{{::feedback.DesignAreas}}</div>
+                                <div class="col-lg-1 text-center">{{::feedback.DesignAreasLevel}}</div>
+                                <div class="col-lg-5"> {{::feedback.DesignAreasComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.CodingAreasLevel>0">
+                                <div class="col-lg-3">Coding</div>
+                                <div class="col-lg-3">{{::feedback.CodingAreas}}</div>
+                                <div class="col-lg-1 text-center">{{::feedback.CodingAreasLevel}}</div>
+                                <div class="col-lg-5"> {{::feedback.CodingAreasComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.DatabaseAreasLevel>0">
+                                <div class="col-lg-3">Database</div>
+                                <div class="col-lg-3">{{::feedback.DatabaseAreas}}</div>
+                                <div class="col-lg-1 text-center">{{::feedback.DatabaseAreasLevel}}</div>
+                                <div class="col-lg-5"> {{::feedback.DatabaseAreasComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.TestingAreasLevel>0">
+                                <div class="col-lg-3">Testing</div>
+                                <div class="col-lg-3">{{::feedback.TestingAreas}}</div>
+                                <div class="col-lg-1 text-center">{{::feedback.TestingAreasLevel}}</div>
+                                <div class="col-lg-5"> {{::feedback.TestingAreasComments}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row clearfix">
+            <div class="col-lg-12 form-group">
+                <div class="box box-info">
+                    <div class="box-header bg-info">
+                        <span class="box-title">Soft Skills Assessment</span>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-1 text-center"><strong>Level</strong></div>
+                                <div class="col-lg-8"><strong>Comments</strong></div>
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.ResultOrientationLevel>0">
+                                <div class="col-lg-3">Result Orientation</div>
+                                <div class="col-lg-1 text-center">{{::feedback.ResultOrientationLevel}}</div>
+                                <div class="col-lg-8"> {{::feedback.ResultOrientationComments}}</div>
+                            </div>
+                        </div>                       
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.CommunicationSkillsLevel>0">
+                                <div class="col-lg-3">Communication Skills (Oral) </div>
+                                <div class="col-lg-1 text-center">{{::feedback.CommunicationSkillsLevel}}</div>
+                                <div class="col-lg-8"> {{::feedback.CommunicationSkillsComments}}</div>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.TeamWorkingLevel>0">
+                                <div class="col-lg-3">Team Working </div>
+                                <div class="col-lg-1 text-center">{{::feedback.TeamWorkingLevel}}</div>
+                                <div class="col-lg-8"> {{::feedback.TeamWorkingComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.LeadershipCapabilityLevel>0">
+                                <div class="col-lg-3">Leadership Capability </div>
+                                <div class="col-lg-1 text-center">{{::feedback.LeadershipCapabilityLevel}}</div>
+                                <div class="col-lg-8"> {{::feedback.LeadershipCapabilityComments}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" ng-show="feedback.AttitudeLevel>0">
+                                <div class="col-lg-3">Attitude </div>
+                                <div class="col-lg-1 text-center">{{::feedback.AttitudeLevel}}</div>
+                                <div class="col-lg-8"> {{::feedback.AttitudeComments}}</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row clearfix box box-solid bg-light-blue">
+            <div class="col-md-6 column">
+                <div class="form-group">
+                    <label>Overall Rating:</label>
+                    <h1>{{feedback.OverallRatingLevel}}</h1><p>{{::feedback.OverallRatingComments}}</p>
+                </div>
+            </div>
+            <div class="col-md-6 column">
+                <div class="form-group">
+                    <label>Position Recommended:</label>
+                    <div ng-switch on="feedback.PositionRecomended">
+                        <div ng-switch-when="1">
+                            <h1>Yes</h1>
+                        </div>
+                        <div ng-switch-default>
+                            <h1>No</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    
+        <div class="row clearfix">
+            <div class="col-lg-12 form-group">
+                <strong>Positives: </strong>{{::feedback.PositivesRemarks}}<br />
+                <strong>Gaps/Concerns: </strong>{{::feedback.ConcernsGaps}}<br />
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</script>
+
+
+

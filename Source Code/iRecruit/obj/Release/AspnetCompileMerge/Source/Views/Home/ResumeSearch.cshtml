@@ -1,0 +1,243 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<style>
+    .even {
+        background-color:#76A0D3;
+    }
+    .odd {
+        background-color:#BDE3FB;
+    }
+</style>
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+            <a href="javascript:window.history.back();" class="back-button big"></a>     
+            <h1 style="font-size:36px;margin-left:80px; margin-top:45px">
+               Resume Search
+            <small> {{pageData.SearchType}}</small>
+            </h1>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+   <div class="form-group">
+        
+        <div class="form-inline">
+            <label class="control-label">Search Type: &nbsp;</label>
+            <label class="radio" style="padding-right:15px;font-weight:normal">
+                <input name="searchtype" type="radio" value="Simple" ng-model="pageData.SearchType" required /> Simple&nbsp;
+            </label>
+			<label class="radio" style="padding-right:15px;font-weight:normal" >
+                <input name="searchtype" type="radio" value="Advance" ng-model="pageData.SearchType" required /> Advance&nbsp;
+            </label>
+        </div>
+	</div>
+    <form id="i_form1" name="i_form1" novalidate>
+            <div class="box box-primary" ng-show="pageData.SearchType == 'Simple'">
+            <div class="box-header bg-info">
+                <h3 class="box-title">Search Criteria </h3>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+                <div class="row clearfix">
+					<div class="col-md-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" id="search" name="search" placeholder="Enter first name, last name, email or technology" class="form-control" ng-required="pageData.SearchType != 'Advanced'" ng-model="pageData.searchParams.search">
+							    <span class="input-group-btn">
+                                    <button name="seach-simple" id="search-simple" class="btn btn-flat" ng-click="doSearch();"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                            <i ng-show="loadingIndent" class="glyphicon glyphicon-refresh"></i>
+							<p ng-show="i_form1.search.$error.required && !i_form1.search.$pristine" class="has-error">Please enter search criteria.</p>
+						</div>
+                    </div>
+                </div> 
+            </div>
+            </div>
+        <div class="box box-danger"  ng-show="pageData.SearchType == 'Advance'">
+            <div class="box-header bg-danger">
+                <h3 class="box-title">Search Criteria </h3>
+            </div><!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row clearfix">
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label>Candidate Status</label>
+                                    <select class="form-control" id="status" name="status" ng-model="pageData.searchParams.ResumeStatus" ng-options="br.Name for br in cand_status_types">
+                                    <option value="">--- Select Status ---</option>
+                                </select>
+                            </div>
+						</div>
+                    </div>
+                    <div class="row clearfix">
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="company">First Name</label>
+                                <input class="form-control" id="fname" name="fname" placeholder="Enter first name" type="text" ng-model="pageData.searchParams.FirstName" >
+                            </div>
+						</div>
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="company">Last Name</label>
+                                <input class="form-control" id="lname" name="lname" placeholder="Enter last name" type="text" ng-model="pageData.searchParams.LastName" >
+                            </div>
+						</div>
+					</div>
+                    <div class="row clearfix">
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="company">Email</label>
+                                <input class="form-control" id="email" name="email" placeholder="Enter email id" type="text" ng-model="pageData.searchParams.Email" >
+                                <p ng-show="i_form1.email.$error.email && !i_form1.email.$pristine" class="has-error">Please enter valid email</p>
+                            </div>
+						</div>
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="company">Contact Number</label>
+                                <input class="form-control" id="phone" name="phone" placeholder="Enter contact number" type="text" ng-model="pageData.searchParams.ContactNumber" >
+                            </div>
+						</div>
+					</div>
+
+                    <div class="row clearfix">
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="company">Minimum Experience</label>
+                                <input class="form-control" id="exp" name="exp" ng-model="pageData.searchParams.MinExperience" placeholder="Enter minimum experience" type="number">
+                                <p ng-show="i_form1.exp.$error.number && !i_form1.exp.$pristine" class="has-error">Minimum experience should be numeric</p>
+                            </div>
+						</div>
+						<div class="col-md-6 column">
+                            <label class="control-label">Resume Source</label>
+                            <div class="form-inline">
+                                <div class="input-group form-control" ng-repeat="i in resume_types" style="border-style:none">
+                                    <label class="radio" style="padding-right:15px;font-weight:normal">
+                                    <input type="radio" ng-model="pageData.searchParams.ResumeSourceTypeID" value="{{i.TypeID}}" name="resource_source"/> {{i.Name}}
+                                    </label>
+                                </div>&nbsp;
+                                <div class="input-group form-control" style="border-style:none">
+                                    <label class="radio" style="padding-left:-15px;font-weight:normal">
+                                    <input type="radio" ng-model="pageData.searchParams.ResumeSourceTypeID" value="0" name="resource_source"/> N/A
+                                    </label>
+                                </div>&nbsp;
+                            </div>
+                            <input class="form-control" name="src_name" ng-required="pageData.searchParams.ResumeSourceTypeID == 34" ng-show="pageData.searchParams.ResumeSourceTypeID != 35" ng-model="pageData.searchParams.ResumeSourceDetail" placeholder="Enter source name">
+                            <select class="form-control" id="src" name="src" ng-show="pageData.searchParams.ResumeSourceTypeID == 35" ng-required="pageData.searchParams.ResumeSourceTypeID == 35" ng-model="pageData.searchParams.ResumeSource" ng-options="br.ConsultancyName for br in consultancies">
+                                <option value="">--- Select Consuntancy ---</option>
+                            </select>
+                            
+						</div>
+					</div>
+                    <div class="row clearfix">
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="technology">Skills</label>
+                                <input id="tech" class="form-control" data-placeholder="Enter skills" style="min-height:38px;padding-top:10px;padding-bottom:10px" ng-model="pageData.searchParams.Skills" >
+                            </div>
+                        </div>
+                        <div class="col-md-6 column">
+                            <div class="form-group">
+                                <label for="technology">Certifications</label>
+                                <input id="cert" class="form-control" data-placeholder="Enter certifications" style="min-height:38px;padding-top:10px;padding-bottom:10px" ng-model="pageData.searchParams.Certifications" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+						<div class="col-md-6 column">
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <label class="checkbox" style="padding-right:15px;font-weight:normal">
+                                        <input name="passport" type="checkbox" value="1" ng-model="pageData.searchParams.Passport" /> Passport&nbsp;
+                                    </label>
+							        <label class="checkbox" style="padding-right:15px;font-weight:normal" >
+                                        <input name="visa" type="checkbox" value="1" ng-model="pageData.searchParams.Visa" /> Visa&nbsp;
+                                    </label>
+							        <label class="checkbox" style="padding-right:15px;font-weight:normal" >
+                                        <input name="travelled" type="checkbox" value="1" ng-model="pageData.searchParams.TravelledOnsiteBefore" /> Travelled Onsite Before&nbsp;
+                                    </label>
+                                </div>
+			                </div>
+                        </div>
+                        <div class="col-md-6 column">
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <label>Gender:</label>&nbsp;&nbsp;
+                                    <label class="radio" style="padding-right:15px;font-weight:normal">
+                                        <input name="gender" type="radio" value="M" ng-model="pageData.searchParams.Gender" /> Male&nbsp;
+                                    </label>
+									<label class="radio" style="padding-right:15px;font-weight:normal" >
+                                        <input name="gender" type="radio" value="F" ng-model="pageData.searchParams.Gender" /> Female&nbsp;
+                                    </label>
+                                    <label class="radio" style="padding-right:15px;font-weight:normal" >
+                                        <input name="gender" type="radio" value="" ng-model="pageData.searchParams.Gender" /> N/A&nbsp;
+                                    </label>
+                                </div>
+                                
+			                </div>
+                            </div>
+                                
+                    </div>
+					
+                </div><!-- /.box-body -->
+            <br />
+            
+            
+        </div>                 
+        <!-- /.box -->
+        <div class="row clearfix">
+                <div class="col-lg-6">
+                    <span class="btn btn-primary" ng-click="doSearch();">Submit</span>&nbsp; 
+                    <span class="btn btn-danger" ng-click="cancelForm();">Reset</span>
+                </div>
+                <div class="col-lg-6 pull-right">
+                    <select class="form-control" ng-model="pageData.SortCriteria" ng-change="doSearch();" ng-options="br.Label for br in SortCriterias">
+                        <option value="">--- Select Sort Critria ---</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+     <div class="box box-success" ng-show="pageData.items.length">
+         <div class="box-header bg-info" style="cursor: move;">
+            <div class="pull-right box-tools">
+                <span class="box-title"><a href="javascript:void(0);" ng-click="exportCsv();" ng-show="NotIE()"><i class="fa fa-file-excel-o "></i></a> About <strong>{{pageData.TotalItems}}</strong> resume(s) found.</span>
+            </div>
+            
+        </div><!-- /.box-header -->
+@*        <div class="box-body" ng-if="!isLoading" when-scrolled="loadMore()">*@
+            <div class="box-body" infinite-scroll="nextPage()" infinite-scroll-disabled='pageData.busy' infinite-scroll-distance="3" infiniteScrollImmediateCheck="false">
+            <div class="row" ng-class-odd="'bg-warning'" ng-class-even="'bg-white'" style="padding:25px"  ng-repeat="obj in pageData.items track by obj.CandidateID">
+				@*<div class="col-md-11 col-md-offset-1">*@
+                <div class="row">
+                    <div class="col-md-10 text-primary">
+                        <a ui-sref="profile({CandidateID: obj.CandidateID})"><strong>{{obj.FirstName}} {{obj.LastName}}</strong></a>
+                    </div>
+                    <div class="col-md-2">
+                        <strong>{{obj.HireStatus}}</strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Candidate#: {{obj.CandidateID}}</div>
+                    <div class="col-md-2">Ref: {{obj.Reference1}}</div>
+                    <div class="col-md-8">{{obj.Remarks}} </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Total Exp.: {{obj.TotalExperience}} years</div>
+                    <div class="col-md-2">Contact#: {{obj.ContactNumber}}</div>
+                    <div class="col-md-2 text-success">Email: <strong>{{obj.Email}}</strong></div>
+                    <div class="col-md-4"><a href="javascript:void(0);" ng-click="downloadResume(obj.ResumeVirtualPath)">{{obj.ResumeFileName}}</a></div>
+                    <div class="col-md-2 text-muted">{{obj.CreatedDate | moment: ldf}}</div>
+                </div>
+                @*</div>*@
+            </div> 
+        </div>
+        <div ng-hide="!pageData.busy || pageData.totalReached">
+            <img src="images/ajax-loader.gif">
+        </div>
+     </div>
+</section><!-- /.content -->
+

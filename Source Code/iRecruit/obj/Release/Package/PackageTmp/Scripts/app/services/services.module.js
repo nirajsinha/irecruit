@@ -1,0 +1,1 @@
+angular.module('irecruit.services', ['LocalStorageModule']);

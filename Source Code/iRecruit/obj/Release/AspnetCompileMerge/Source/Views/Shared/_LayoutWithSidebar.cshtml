@@ -1,0 +1,221 @@
+﻿@using System.Web.Optimization
+@using iRecruit.Extensions
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>iRecruit</title>
+    @Styles.Render("~/css/jquery/themes/base/css")
+    @Styles.Render("~/css/bootstrap")
+    @Styles.Render("~/css/plugins")
+    @Styles.Render("~/css/site")
+
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/bootstrap")
+    @Scripts.Render("~/scripts/angular")
+    @Scripts.Render("~/scripts/plugins")
+    @Scripts.Render("~/scripts/app")
+    
+<!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+ 
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+    </script>
+<![endif]-->
+        <style>
+            .logo { 
+                display: block; 
+                background-image: url(); 
+                background-repeat: no-repeat; 
+                background-position: 0px -68px;
+            } 
+        </style>
+   
+</head>
+<body  class="skin-blue">
+    <div id="messagewrapper" style="display: none; top:55px;">
+        @Html.RenderMessages()
+	</div>
+        @RenderSection("menu", required: false)
+	<div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+
+	</div>
+    <header class="header">
+            <a href="~/" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+                <h2 style="line-height:.5"><strong><font color="red">i</font>Recruit</strong></h2>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                                <span class="label label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 10 new notifications</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-people info"></i> 5 new members joined today
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users warning"></i> 5 new members joined
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-cart success"></i> 10 interviews made
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-person danger"></i> You changed your username
+                                            </a>
+                                        </li>
+                                    </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>{{data.UserInfo.Name}} <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="~/images/profile_icon.png" class="img-circle" alt="User Image">
+                                    <p>
+                                        {{data.UserInfo.Name}} - {{data.UserInfo.Title}}
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="~/resource-profile" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        @using (Html.BeginForm("SignOut", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            <a href="javascript:document.getElementById('logoutForm').submit()"  class="btn btn-default btn-flat">Sign out</a>
+                                        }
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left" style="min-height: 617px;">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas" style="min-height: 2013px;">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="~/home">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                <span>Indents</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="~/indent" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Indent</a></li>
+                                <li><a href="~/indent-timeline" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Timeline</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-laptop"></i>
+                                <span>Profile Management</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Manage Resume</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Schedule Interview</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Interview Feedback</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-edit"></i> <span>Settings</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Branches</a></li>
+                                <li><a href="~/settings-departments" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Departments</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Consultants</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Technologies</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Skill - Sets</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Notifications</a></li>
+                                <li><a href="#" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Dashboard Configurations</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-table"></i> <span>Reports</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="~/reports-indent-tracker" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Indent Tracker</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+            
+                @RenderBody()
+                
+            </aside><!-- /.right-side -->
+        </div>
+
+    @RenderSection("scripts", required: false)
+    
+        
+           
+</body>
+</html>

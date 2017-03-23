@@ -1,0 +1,60 @@
+﻿@using System.Web.Optimization
+@model iRecruit.Controllers.LogOnModel
+@using iRecruit.Extensions
+<!DOCTYPE html>
+<html class="bg-black">
+    <head>
+        <meta charset="UTF-8">
+        <title>Log in</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        
+        @Styles.Render("~/css/bootstrap")
+        @Styles.Render("~/css/toastr.css")
+        @Styles.Render("~/css/site")
+
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/bootstrap")
+        @Scripts.Render("~/scripts/assets/plugins/toastr.min.js")
+    @Scripts.Render("~/scripts/app/global.js")
+         
+    </head>
+    <body class="bg-black">
+        <div id="messagewrapper" style="display: none; top:55px;">
+            @Html.RenderMessages()
+	    </div>
+        <div class="form-box" id="login-box">
+            <div class="header" style="background-color:#395672">Sign In</div>
+            @using (Html.BeginForm("LogOn", "Account", FormMethod.Post, new { id = "myForm", name = "myForm", returnUrl = ViewBag.ReturnUrl }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.ReturnUrl)
+                    
+                <div class="body bg-gray">
+                    <div class="form-group">
+                        <div style="color:#f56954">
+                            @Html.ValidationSummary()
+                        </div>
+                        @Html.TextBoxFor(m => m.UserID, new { placeholder = "Enter ihtech user id", id = "uid", @class = "required form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.PasswordFor(m => m.Password, new { placeholder = "Enter password", id = "password", @class = "required form-control" })
+                    </div>          
+                    <div class="form-group">
+                        @Html.CheckBoxFor(m => m.RememberMe) @Html.LabelFor(m => m.RememberMe)
+                        <div class="info"><small> (Select this option if you're the only person who uses this computer. Your server will allow a longer period of inactivity before signing you out.)</small></div>
+                    </div>
+                </div>
+                <div class="footer" style="background-color:#395672">                                                               
+                    <button type="submit" class="btn bg-olive btn-block" style="background-color:transparent!important">Sign me in</button>  
+                    
+                </div>
+            }
+
+        </div>
+    
+        <script>
+             //handleAjaxMessages();
+             displayMessages();
+         </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.dll.config
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.dll.config
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.dll.config
+D:\iRecruit\Development\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.dll
+D:\iRecruit\Development\Source Code\iRecruit.Entity\bin\Debug\iRecruit.Entity.pdb
+D:\iRecruit\Development\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.dll
+D:\iRecruit\Development\Source Code\iRecruit.Entity\obj\Debug\iRecruit.Entity.pdb

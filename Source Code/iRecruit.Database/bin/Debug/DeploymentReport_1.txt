@@ -1,0 +1,62 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[ActivityLog] (Table)
+       [dbo].[Branches] (Table)
+       [dbo].[Candidates] (Table)
+       [dbo].[CandidatesHistory] (Table)
+       [dbo].[Company] (Table)
+       [dbo].[Consultancies] (Table)
+       [dbo].[DepartmentRoles] (Table)
+       [dbo].[Departments] (Table)
+       [dbo].[EmailNotifications] (Table)
+       [dbo].[Features] (Table)
+       [dbo].[Indent] (Table)
+       [dbo].[InterviewFeedbacks] (Table)
+       [dbo].[InterviewPanel] (Table)
+       [dbo].[InterviewSchedule] (Table)
+       [dbo].[Resumes] (Table)
+       [dbo].[TechnologiesAndSkills] (Table)
+       [dbo].[Type] (Table)
+       [dbo].[TypeClass] (Table)
+       [dbo].[Users] (Table)
+       Default Constraint: unnamed constraint on [dbo].[TechnologiesAndSkills] (Default Constraint)
+       Foreign Key: unnamed constraint on [dbo].[ActivityLog] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Branches] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Candidates] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[DepartmentRoles] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[DepartmentRoles] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Departments] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Features] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Indent] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Indent] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[InterviewFeedbacks] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[InterviewPanel] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[InterviewSchedule] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Resumes] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[TechnologiesAndSkills] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Type] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Users] (Foreign Key)
+       [dbo].[fn_Split] (Function)
+       [dbo].[prcExcuteInterviewWorkflow] (Procedure)
+       [dbo].[prcExecuteIndentWorkflow] (Procedure)
+       [dbo].[prcGetIndents] (Procedure)
+       [dbo].[prcGetIndentTrackerData] (Procedure)
+       [dbo].[prcGetIndentTrackerInfo] (Procedure)
+       [dbo].[prcGetInterviewSchedule] (Procedure)
+       [dbo].[prcGetOfferJoiningRatio] (Procedure)
+       [dbo].[prcGetOpenPositions] (Procedure)
+       [dbo].[prcGetResumeSources] (Procedure)
+       [dbo].[prcInterviewFeedback] (Procedure)
+       [dbo].[prcResumeSearch] (Procedure)
+
+** Supporting actions

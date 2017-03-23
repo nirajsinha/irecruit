@@ -1,0 +1,18 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Release\iRecruit.Security.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Release\iRecruit.Security.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Release\System.Net.Http.Formatting.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Release\System.Web.Http.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Release\System.Net.Http.Formatting.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Release\System.Web.Http.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\obj\Release\iRecruit.Security.csprojResolveAssemblyReference.cache
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\obj\Release\iRecruit.Security.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\obj\Release\iRecruit.Security.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Release\iRecruit.Security.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Release\iRecruit.Security.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Release\System.Net.Http.Formatting.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Release\System.Web.Http.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Release\System.Net.Http.Formatting.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Release\System.Web.Http.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\obj\Release\iRecruit.Security.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\obj\Release\iRecruit.Security.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\obj\Release\iRecruit.Security.pdb

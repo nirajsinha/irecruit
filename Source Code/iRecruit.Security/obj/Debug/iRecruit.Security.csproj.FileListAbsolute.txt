@@ -1,0 +1,26 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Debug\iRecruit.Security.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Debug\iRecruit.Security.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Debug\System.Net.Http.Formatting.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Debug\System.Web.Http.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Debug\System.Net.Http.Formatting.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\bin\Debug\System.Web.Http.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\iRecruit.Security.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\iRecruit.Security.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Net.Http.Formatting.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Web.Http.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Net.Http.Formatting.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Web.Http.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\iRecruit.Security.dll
+D:\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\iRecruit.Security.pdb
+D:\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Net.Http.Formatting.dll
+D:\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Web.Http.dll
+D:\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Net.Http.Formatting.xml
+D:\iRecruit\Development\Source Code\iRecruit.Security\bin\Debug\System.Web.Http.xml
+D:\iRecruit\Development\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.dll
+D:\iRecruit\Development\Source Code\iRecruit.Security\obj\Debug\iRecruit.Security.pdb

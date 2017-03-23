@@ -1,0 +1,137 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<style>
+    .chosen-container .search-field{
+        height:34px;
+    }
+    
+</style>
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+            <a href="javascript:window.history.back();" class="back-button big"></a>     
+            <h1 style="font-size:36px;margin-left:80px; margin-top:45px">
+               Interview Schedule
+            <small> {{cand.CandidateName}}</small>
+            </h1>
+        </div>
+        <div class="col-lg-4 pull-right">
+            <div class="form-group" style="padding-top:40px;">
+                Enter Candidate#:
+                <div class="input-group">
+                    <input name="q" class="form-control input-group" placeholder="Enter Candidate#" type="text" ng-keypress="executeSearch($event);" ng-model="cand.CandidateID">
+                    <span class="input-group-btn">
+                        <button class="btn btn-flat" ng-click="loadCandidate();"><i class="fa fa-search"></i></button>
+                    </span>
+                </div><!-- /.input group -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="content">
+   
+             <form id="i_form1" name="i_form1" novalidate>
+              <div class="box box-primary">
+                    <div class="box-header bg-info">
+                        <h3 class="box-title">Schedule Information</h3>
+                    </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row clearfix">
+						        <div class="col-md-12">
+                                    <label>Candidate Name: </label><p>{{cand.CandidateName}}</p>
+						        </div>
+  					        </div>
+
+                            <div class="row clearfix">
+						        <div class="col-md-12">
+                                    <label>Contact Number: </label><p>{{cand.ContactNumber}}</p>
+						        </div>
+  					        </div>
+                            
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Round:</label>
+                                        <div class="form-inline">
+                                            <label class="radio" style="padding-right:15px;font-weight:normal">
+                                                <input name="round" type="radio" value="1" ng-model="cand.InverviewRound" /> Technical Round 1&nbsp;
+                                            </label>
+									        <label class="radio" style="padding-right:15px;font-weight:normal" >
+                                                <input name="round" type="radio" value="2" ng-model="cand.InverviewRound" /> Technical Round 2&nbsp;
+                                            </label>
+                                        </div>
+			                        </div>
+                                 </div>
+                            </div>
+							
+                            <div class="form-group">
+                                <label for="company">Subject:</label>
+                                <input type="text" class="form-control" ng-model="cand.Subject" placeholder="Enter subject" />
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Description:</label>
+                                <textarea class="form-control" id="remarks" ng-model="cand.Description" placeholder="Enter description" rows="5"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Interview Panel</label>
+                                <select id="interviewers" ng-model="interviewers" data-placeholder=" " chosen multiple class="form-control" style="min-height:38px;padding-top:10px;padding-bottom:10px"  ng-options="t1.Name for t1 in interview_panel"> </select>
+                            </div>
+                            
+                            <div class="form-group" >
+                                <label>Start Time:</label>
+                                <datetimepicker min-date="minDate" 
+                                    show-weeks="showWeeks" 
+                                    hour-step="hourStep" 
+                                    minute-step="minuteStep" 
+                                    ng-model="cand.StartTime" 
+                                    show-meridian="showMeridian" 
+                                    date-format="dd-MMM-yyyy" 
+                                    date-options="dateOptions" 
+                                    date-disabled="disabled(date, mode)" 
+                                    readonly-time="false"></datetimepicker>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label>End Time:</label>
+                                <datetimepicker min-date="minDate" 
+                                    show-weeks="showWeeks" 
+                                    hour-step="hourStep" 
+                                    minute-step="minuteStep" 
+                                    ng-model="cand.EndTime" 
+                                    show-meridian="showMeridian" 
+                                    date-format="dd-MMM-yyyy" 
+                                    date-options="dateOptions" 
+                                    date-disabled="disabled(date, mode)" 
+                                    readonly-time="false"></datetimepicker>
+                            </div>
+                            <p ng-show="DateError" class="has-error">Please select valid start and end time for interview.</p>
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Attach Resume:</label>
+                                        <div class="form-inline">
+                                            <label class="radio" style="padding-right:15px;font-weight:normal">
+                                                <input name="attachresume" type="radio" value="1" ng-model="cand.AttachResume" /> Yes&nbsp;
+                                            </label>
+									        <label class="radio" style="padding-right:15px;font-weight:normal" >
+                                                <input name="attachresume" type="radio" value="0" ng-model="cand.AttachResume" /> No&nbsp;
+                                            </label>
+                                        </div>
+			                        </div>
+                                 </div>
+                            </div>
+                            
+                        </div><!-- /.box-body -->
+                    <br />
+                    <span class="btn btn-primary" ng-click="submitForm(i_form1);">Submit</span>&nbsp; 
+                  <span class="btn btn-danger" ng-click="cancelForm();">Cancel</span>
+                </div>                 
+                <!-- /.box -->
+              </form>
+    </section><!-- /.content -->
+

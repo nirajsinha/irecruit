@@ -1,0 +1,116 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+<!-- Content Header (Page header) -->
+                
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+        <a href="javascript:window.history.back();" class="back-button big"></a>     
+        <h1 style="font-size:36px;margin-left:80px; margin-top:45px">Profile
+        </h1>
+            </div>
+        <div class="col-lg-4 pull-right">
+            <div class="form-group" style="padding-top:40px;">
+                <div class="input-group">
+                    <input name="q" class="form-control input-group" placeholder="Search..." type="text" ng-model="search" typeahead="i.FirstName for i in searchCandidates($viewValue)" typeahead-loading="loadingIndent" typeahead-on-select="onCandidateSelected($item, $model, $label)">
+                    <span class="input-group-btn">
+                        <button name="seach" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+                </div><!-- /.input group -->
+            </div>
+
+            </div>
+            
+        </div>
+</section>
+
+    <!-- Main content -->
+<section class="content" ng-show="cand.CandidateID== null || cand.CandidateID== undefined || cand.CandidateID ==''"><p>No candidate selected. Please find the candidate to view profile</p></section>
+    <section class="content" ng-show="cand.CandidateID != null || cand.CandidateID != undefined && cand.CandidateID !=''">
+    <div class="row">
+
+        <section class="col-lg-12">
+            <div class="box form-inline" style="height:126px; padding-right:20px;background-color:#595758; color:white">
+                <div class="col-lg-8">
+                    <h1>{{cand.FirstName}} {{cand.LastName}}</h1>
+                    {{cand.CurrentTitle}} at <span class="text-light-blue">{{cand.CurrentCompany}}</span>
+                    &nbsp;&nbsp;<a ui-sref="candidate({CandidateID: cand.CandidateID})"><span class="btn btn-info">Edit Profile</span></a>
+                    &nbsp;&nbsp;<a href="javascript:void(0);"><span class="btn btn-danger" ng-show="{{cand.ResumeFileName != ''}}" ng-click="downloadResume();">Download Resume</span></a>
+                </div>
+                <div class="pull-right">
+                    <div class="profile-image">
+                        <img src="~/images/avatar-mini.png" alt="User Image">
+                    </div>
+                </div>
+            </div><!-- /.box -->
+        </section><!-- /.Left col -->
+
+    </div><!-- /.row (main row) -->
+    <div class="row">
+        <section class="col-lg-7 col-lg-offset-1">
+            <div>
+
+                <h2>About {{cand.FirstName}}</h2>
+                <p>{{cand.Remarks}} </p>
+                <div class="space15"></div>
+                <h2>Bio Graph</h2>
+                <p><label>First Name </label>: {{cand.FirstName}}</p>
+                <p><label>Last Name </label>: {{cand.LastName}}</p>
+                <p><label>Country </label>: India</p>
+                <p><label>Bithday </label>: {{cand.DOB | moment: ldf}}</p>
+                <p><label>Title </label>: {{cand.CurrentTitle}}</p>
+                <p><label>Email </label>: <a href="mailto:{{cand.Email}}">{{cand.Email}}</a></p>
+                <p><label>Phone </label>: {{cand.ContactNumber}}</p>
+                <div class="space15"></div>
+                <hr>
+                <h2>Skills</h2>
+                <div class="space15"></div>
+                <p>{{cand.Skills}}</p>
+                <h2>Certifications</h2>
+                <div class="space15"></div>
+                <p>{{cand.Certifications}}</p>
+
+            </div><!-- /.box -->
+
+
+        </section><!-- /.Left col -->
+        <section class="col-lg-4">
+
+
+            <div class="box box-solid bg-green">
+                <h3 style="padding:20px;">Experience</h3>
+                <div class="box box-solid" style="padding:20px; background-color:#F5F5F5; color:#333;">
+                    <div class="row-fluid">
+                        <h4><strong>{{cand.TotalExperience}} year(s)</strong></h4>
+                        <p><strong>{{cand.CurrentTitle}}</strong></p>
+                        <p>{{cand.CurrentCompany}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-solid bg-red">
+                <h3 style="padding:20px;">Recommended By</h3>
+                <div class="box box-solid" style="padding:20px; background-color:#F5F5F5; color:black;">
+                    <div class="row-fluid">
+                        <div class="col-lg-6">
+                            <div class="text-center">
+                                <a href="#"><img src="~/images/avatar-mini.png" alt="" class="img-circle" width="65" height="65"></a>
+                                <p>{{cand.Reference1}}<br />{{cand.Reference1Contact}}</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-center">
+                                <a href="#"><img src="~/images/avatar-mini.png" alt="" class="img-circle" width="65" height="65"></a>
+                                <p>{{cand.Reference2}}<br />{{cand.Reference2Contact}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section><!-- /.Left col -->
+
+    </div><!-- /.row (main row) -->
+</section><!-- /.content -->

@@ -1,0 +1,110 @@
+2014-09-02 11:18:02.3460|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:18:02.3900|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:18:05.2103|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:18:05.2263|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:18:43.6982|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Request http://localhost:58637/api/masterdata/1
+2014-09-02 11:18:43.6982|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-09-02 11:18:43.7262|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:masterdata,id:1,action:Get'
+2014-09-02 11:18:43.7262|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController MasterData
+2014-09-02 11:18:43.7262|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-09-02 11:18:43.7262|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-09-02 11:18:43.7482|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.MasterDataController
+2014-09-02 11:18:43.7482|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.MasterDataController
+2014-09-02 11:18:43.7482|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController ExecuteAsync
+2014-09-02 11:18:43.7602|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-09-02 11:18:43.7742|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2014-09-02 11:18:43.7912|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-09-02 11:18:43.7912|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-09-02 11:18:43.8322|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-09-02 11:18:43.8362|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-09-02 11:18:43.8362|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2014-09-02 11:18:43.8362|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-09-02 11:18:43.8512|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2014-09-02 11:18:43.8512|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2014-09-02 11:18:49.7188|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='MasterDataModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2014-09-02 11:18:49.7388|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='MasterDataModel', mediaType='application/json; charset=utf-8'
+2014-09-02 11:18:49.7388|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2014-09-02 11:18:49.7388|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2014-09-02 11:18:49.7488|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 iRecruit.Controllers.MasterDataController
+2014-09-02 11:18:49.7488|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.MasterDataModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2014-09-02 11:18:49.7638|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-09-02 11:18:49.7638|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2014-09-02 11:18:49.7638|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-09-02 11:18:49.7638|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController ExecuteAsync
+2014-09-02 11:18:49.7798|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-09-02 11:18:49.7798|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2014-09-02 11:18:49.7968|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.MasterDataModel', type='MasterDataModel', content-type='application/json; charset=utf-8'
+2014-09-02 11:18:49.8518|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2014-09-02 11:18:49.8608|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController Dispose
+2014-09-02 11:18:49.8608|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController Dispose
+2014-09-02 11:23:18.0976|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:23:18.1606|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:39:40.1118|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:39:40.1538|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:44:11.7290|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:44:11.7720|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:45:47.1085|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:45:47.1515|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:48:54.7513|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:48:54.7973|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:50:15.9914|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:50:16.0334|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:52:13.2481|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:52:13.2911|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:54:21.4279|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:54:21.4719|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:54:42.6880|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:54:42.7291|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:55:58.4166|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 11:55:58.4596|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 12:00:09.0497|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 12:00:09.0877|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 17:02:34.2981|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 17:02:34.3421|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 17:18:51.2478|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Request http://localhost:58637/api/masterdata/1
+2014-09-02 17:18:51.2478|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-09-02 17:18:51.2858|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:masterdata,id:1,action:Get'
+2014-09-02 17:18:51.2898|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController MasterData
+2014-09-02 17:18:51.2898|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2014-09-02 17:18:51.2898|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2014-09-02 17:18:51.3108|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.MasterDataController
+2014-09-02 17:18:51.3108|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.MasterDataController
+2014-09-02 17:18:51.3108|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController ExecuteAsync
+2014-09-02 17:18:51.3218|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2014-09-02 17:18:51.3378|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2014-09-02 17:18:51.3548|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2014-09-02 17:18:51.3548|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2014-09-02 17:18:51.3948|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2014-09-02 17:18:51.3988|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2014-09-02 17:18:51.3988|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2014-09-02 17:18:51.3988|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2014-09-02 17:18:51.4158|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2014-09-02 17:18:51.4158|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2014-09-02 17:18:58.2095|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='MasterDataModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2014-09-02 17:18:58.2295|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='MasterDataModel', mediaType='application/json; charset=utf-8'
+2014-09-02 17:18:58.2335|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2014-09-02 17:18:58.2335|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2014-09-02 17:18:58.2335|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 iRecruit.Controllers.MasterDataController
+2014-09-02 17:18:58.2485|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.MasterDataModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2014-09-02 17:18:58.2485|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2014-09-02 17:18:58.2635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2014-09-02 17:18:58.2635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2014-09-02 17:18:58.2635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController ExecuteAsync
+2014-09-02 17:18:58.2635|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2014-09-02 17:18:58.2795|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2014-09-02 17:18:58.2945|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.MasterDataModel', type='MasterDataModel', content-type='application/json; charset=utf-8'
+2014-09-02 17:18:58.3535|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2014-09-02 17:18:58.3575|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController Dispose
+2014-09-02 17:18:58.3575|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/masterdata/1 System.Web.Http.Controllers MasterDataController Dispose
+2014-09-02 17:52:53.5850|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 17:52:53.6340|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 18:07:16.0782|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 18:07:16.0952|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 18:15:17.1203|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2014-09-02 18:15:17.1293|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes

@@ -1,0 +1,783 @@
+2015-02-20 11:19:13.5256|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2015-02-20 11:19:13.5706|DEBUG|iRecruit.Logging.NLogger| System.Web.Http.Controllers WebHostHttpControllerTypeResolver GetControllerTypes
+2015-02-20 11:19:48.2826|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Request http://localhost:58637/api/accessfeatures/nsinha
+2015-02-20 11:19:48.2826|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.3146|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:accessfeatures,id:nsinha'
+2015-02-20 11:19:48.3146|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController AccessFeatures
+2015-02-20 11:19:48.3236|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:19:48.3236|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:19:48.3236|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.User.AccessFeaturesController
+2015-02-20 11:19:48.3396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.User.AccessFeaturesController
+2015-02-20 11:19:48.3396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers AccessFeaturesController ExecuteAsync
+2015-02-20 11:19:48.3396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:19:48.3546|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(String id)'
+2015-02-20 11:19:48.3706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:19:48.3866|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:19:48.4226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value 'nsinha'
+2015-02-20 11:19:48.4226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=nsinha
+2015-02-20 11:19:48.4656|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(String id)'
+2015-02-20 11:19:48.4656|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:19:48.4656|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=nsinha)'
+2015-02-20 11:19:48.4786|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=nsinha)'
+2015-02-20 11:19:48.6486|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='MenuModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:19:48.6716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='MenuModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:19:48.6716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:19:48.6806|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:48.6806|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.MenuModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:19:48.6966|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:19:48.6966|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(String id)'
+2015-02-20 11:19:48.6966|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:19:48.7156|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Request http://localhost:58637/api/user/nsinha
+2015-02-20 11:19:48.7156|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers AccessFeaturesController ExecuteAsync
+2015-02-20 11:19:48.7467|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.7156|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Request http://localhost:58637/api/OfferJoiningRatio/1?b=false
+2015-02-20 11:19:48.7467|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Request http://localhost:58637/api/topopenings/1
+2015-02-20 11:19:48.7467|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Request http://localhost:58637/api/OpenPositions/1
+2015-02-20 11:19:48.7467|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.7607|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.7607|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.7607|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.7747|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:19:48.7747|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:user,id:nsinha'
+2015-02-20 11:19:48.8117|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:OfferJoiningRatio,id:1'
+2015-02-20 11:19:48.8117|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:OpenPositions,id:1'
+2015-02-20 11:19:48.8117|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.MenuModel', type='MenuModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:48.8117|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers DefaultHttpControllerSelector SelectController User
+2015-02-20 11:19:48.8217|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerSelector SelectController OfferJoiningRatio
+2015-02-20 11:19:48.8217|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:topopenings,id:1'
+2015-02-20 11:19:48.8217|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController OpenPositions
+2015-02-20 11:19:48.8387|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:19:48.8387|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:19:48.8387|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController TopOpenings
+2015-02-20 11:19:48.8527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:19:48.8527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:19:48.8527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:19:48.8527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:19:48.8527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:19:48.8697|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:19:48.8837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.User.UserController
+2015-02-20 11:19:48.8837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:19:48.8697|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers AccessFeaturesController Dispose
+2015-02-20 11:19:48.8837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Dashboard.OfferJoiningRatioController
+2015-02-20 11:19:48.8837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Dashboard.OpenPositionsController
+2015-02-20 11:19:48.8837|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.User.UserController
+2015-02-20 11:19:48.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Dashboard.TopOpeningsController
+2015-02-20 11:19:48.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/accessfeatures/nsinha System.Web.Http.Controllers AccessFeaturesController Dispose
+2015-02-20 11:19:48.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Dashboard.OfferJoiningRatioController
+2015-02-20 11:19:48.9017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Dashboard.OpenPositionsController
+2015-02-20 11:19:48.9177|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers UserController ExecuteAsync
+2015-02-20 11:19:48.9177|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Dashboard.TopOpeningsController
+2015-02-20 11:19:48.9177|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers OfferJoiningRatioController ExecuteAsync
+2015-02-20 11:19:48.9347|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Request http://localhost:58637/api/ResumeSources/1
+2015-02-20 11:19:48.9347|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers OpenPositionsController ExecuteAsync
+2015-02-20 11:19:48.9347|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:19:48.9347|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers TopOpeningsController ExecuteAsync
+2015-02-20 11:19:48.9347|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:19:48.9487|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:48.9487|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:19:48.9487|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:19:48.9487|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(String id)'
+2015-02-20 11:19:48.9617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id, String b)'
+2015-02-20 11:19:48.9617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:19:48.9617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:19:48.9777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:19:48.9777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:19:48.9777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:19:48.9777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:ResumeSources,id:1'
+2015-02-20 11:19:48.9927|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:19:48.9927|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:19:48.9927|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:19:48.9927|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:19:49.0117|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController ResumeSources
+2015-02-20 11:19:49.0117|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:19:49.0247|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value 'nsinha'
+2015-02-20 11:19:49.0247|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:19:49.0247|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:19:49.0407|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:19:49.0407|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:19:49.0407|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=nsinha
+2015-02-20 11:19:49.0407|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2015-02-20 11:19:49.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'b'
+2015-02-20 11:19:49.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:19:49.0567|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2015-02-20 11:19:49.0707|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(String id)'
+2015-02-20 11:19:49.0707|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:19:49.0707|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'b' bound to the value 'false'
+2015-02-20 11:19:49.0707|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Dashboard.ResumeSourcesController
+2015-02-20 11:19:49.0867|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:19:49.0867|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:19:49.0867|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:19:49.0867|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1, b=false
+2015-02-20 11:19:49.1037|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Dashboard.ResumeSourcesController
+2015-02-20 11:19:49.1037|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:19:49.1037|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=nsinha)'
+2015-02-20 11:19:49.1037|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2015-02-20 11:19:49.1207|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id, String b)'
+2015-02-20 11:19:49.1207|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers ResumeSourcesController ExecuteAsync
+2015-02-20 11:19:49.1207|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2015-02-20 11:19:49.1337|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=nsinha)'
+2015-02-20 11:19:49.1337|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2015-02-20 11:19:49.1497|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2015-02-20 11:19:49.1337|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:19:49.1687|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:19:49.1337|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:19:49.1867|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:19:49.1867|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1, b=false)'
+2015-02-20 11:19:49.1967|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:19:49.1967|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1, b=false)'
+2015-02-20 11:19:49.1967|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:19:49.2137|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2015-02-20 11:19:49.2137|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:19:49.2137|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:19:49.2137|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2015-02-20 11:19:49.2267|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2015-02-20 11:19:49.2267|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='Users', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:19:49.2737|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='Users', mediaType='application/json; charset=utf-8'
+2015-02-20 11:19:49.2737|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:19:49.2737|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.2737|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Entity.Users, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:19:49.2917|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:19:49.2917|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(String id)'
+2015-02-20 11:19:49.2917|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:19:49.3057|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers UserController ExecuteAsync
+2015-02-20 11:19:49.3057|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:49.3307|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:19:49.3057|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='ChartDataModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:19:49.3307|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Entity.Users', type='Users', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.3377|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='ChartDataModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:19:49.3377|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:19:49.3377|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.3377|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:19:49.3527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.ChartDataModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:19:49.3527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:19:49.3527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers UserController Dispose
+2015-02-20 11:19:49.3527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/user/nsinha System.Web.Http.Controllers UserController Dispose
+2015-02-20 11:19:49.3527|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:19:49.3687|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:19:49.3847|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers TopOpeningsController ExecuteAsync
+2015-02-20 11:19:49.3847|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:49.3847|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:19:49.3847|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.ChartDataModel', type='ChartDataModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.3847|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='ChartDataModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:19:49.3997|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='ChartDataModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:19:49.3997|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:19:49.3997|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.3997|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.ChartDataModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:19:49.3997|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:19:49.4157|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:19:49.4157|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='ChartDataModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:19:49.4157|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers TopOpeningsController Dispose
+2015-02-20 11:19:49.4157|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:19:49.4297|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='ChartDataModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:19:49.4297|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/topopenings/1 System.Web.Http.Controllers TopOpeningsController Dispose
+2015-02-20 11:19:49.4297|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:19:49.4297|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:19:49.4477|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers ResumeSourcesController ExecuteAsync
+2015-02-20 11:19:49.4477|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:49.4477|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.4617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:19:49.4617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.ChartDataModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:19:49.4617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.ChartDataModel', type='ChartDataModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.4617|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:19:49.4987|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:19:49.5577|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers ResumeSourcesController Dispose
+2015-02-20 11:19:49.5367|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id, String b)'
+2015-02-20 11:19:49.5777|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/ResumeSources/1 System.Web.Http.Controllers ResumeSourcesController Dispose
+2015-02-20 11:19:49.6017|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:19:49.6327|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers OfferJoiningRatioController ExecuteAsync
+2015-02-20 11:19:49.6247|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='OpenPositionsModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:19:49.6327|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:49.6507|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:19:49.6507|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='OpenPositionsModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:19:49.6507|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.ChartDataModel', type='ChartDataModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.6507|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:19:49.6667|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.6667|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:19:49.6667|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.OpenPositionsModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:19:49.6667|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers OfferJoiningRatioController Dispose
+2015-02-20 11:19:49.6827|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:19:49.6827|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OfferJoiningRatio/1?b=false System.Web.Http.Controllers OfferJoiningRatioController Dispose
+2015-02-20 11:19:49.6827|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:19:49.6957|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:19:49.6957|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers OpenPositionsController ExecuteAsync
+2015-02-20 11:19:49.6957|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:19:49.7107|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:19:49.7107|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.OpenPositionsModel', type='OpenPositionsModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:19:49.7107|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:19:49.7107|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers OpenPositionsController Dispose
+2015-02-20 11:19:49.7277|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/OpenPositions/1 System.Web.Http.Controllers OpenPositionsController Dispose
+2015-02-20 11:20:05.0896|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request http://localhost:58637/api/consultants/0
+2015-02-20 11:20:05.0936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:05.0896|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request http://localhost:58637/api/types
+2015-02-20 11:20:05.0936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:05.1256|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:consultants,id:0'
+2015-02-20 11:20:05.1256|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Consultants
+2015-02-20 11:20:05.1256|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:05.1256|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:types'
+2015-02-20 11:20:05.1406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Types
+2015-02-20 11:20:05.1406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:05.1406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:05.1546|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:20:05.1546|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:05.1546|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:20:05.1706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:20:05.1706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:20:05.1706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:20:05.1706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:05.1706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:20:05.1856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:05.1856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:20:05.1856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:05.1856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get()'
+2015-02-20 11:20:05.2026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:05.1856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:20:05.2026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '0'
+2015-02-20 11:20:05.2026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:05.2026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=0
+2015-02-20 11:20:05.2196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get()'
+2015-02-20 11:20:05.2196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:05.2196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:05.2336|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get()'
+2015-02-20 11:20:05.2336|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:05.2336|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=0)'
+2015-02-20 11:20:05.2336|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get()'
+2015-02-20 11:20:05.2336|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=0)'
+2015-02-20 11:20:05.3286|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:05.3286|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:05.3286|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:05.3426|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:05.3426|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Consultancies, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:05.3426|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:05.3426|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:05.3706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:05.3746|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:20:05.3746|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:05.3746|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:05.3746|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Consultancies]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:05.3906|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:05.3906|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:20:05.3906|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:20:05.4116|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:05.4116|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:05.4206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:05.4206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:05.4206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Type, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:05.4206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:05.4206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get()'
+2015-02-20 11:20:05.4206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:05.4376|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:20:05.4376|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:05.4376|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:05.4376|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Type]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:05.4566|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:05.4566|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:20:05.4566|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:20:22.1866|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request http://localhost:58637/api/types
+2015-02-20 11:20:22.1906|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.1866|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request http://localhost:58637/api/consultants/0
+2015-02-20 11:20:22.1906|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.2196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:consultants,id:0'
+2015-02-20 11:20:22.2226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Consultants
+2015-02-20 11:20:22.2226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:22.2226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:types'
+2015-02-20 11:20:22.2226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:22.2226|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Types
+2015-02-20 11:20:22.2396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:22.2396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:20:22.2396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:22.2396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:20:22.2556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:20:22.2556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:20:22.2556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:20:22.2556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:22.2706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:20:22.2706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:20:22.2706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:22.2706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:22.2846|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:20:22.2846|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get()'
+2015-02-20 11:20:22.2846|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '0'
+2015-02-20 11:20:22.3016|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=0
+2015-02-20 11:20:22.2846|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:22.3016|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:22.3016|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:22.3016|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get()'
+2015-02-20 11:20:22.3166|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:22.3166|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:22.3166|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get()'
+2015-02-20 11:20:22.3166|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=0)'
+2015-02-20 11:20:22.3326|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=0)'
+2015-02-20 11:20:22.3326|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get()'
+2015-02-20 11:20:22.3646|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:22.3646|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:22.3646|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:22.3646|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:22.3796|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:22.3646|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.3796|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Consultancies, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:22.3796|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:22.3936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.3796|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:22.3936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Type, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:22.3936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:22.4096|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:22.3936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:22.4096|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get()'
+2015-02-20 11:20:22.4096|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:20:22.4246|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.4096|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:22.4246|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:20:22.4246|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:22.4406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Consultancies]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.4246|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.4406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:22.4406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:22.4406|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:20:22.4566|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:20:22.4566|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Type]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.4566|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:22.4736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:20:22.4736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:20:22.6886|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request http://localhost:58637/api/types
+2015-02-20 11:20:22.6896|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.6896|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request http://localhost:58637/api/consultants/0
+2015-02-20 11:20:22.6896|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.7286|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:types'
+2015-02-20 11:20:22.7286|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Types
+2015-02-20 11:20:22.7396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:22.7396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:22.7396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:consultants,id:0'
+2015-02-20 11:20:22.7396|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:20:22.7526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Consultants
+2015-02-20 11:20:22.7526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:20:22.7526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:22.7526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:20:22.7716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:22.7716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:22.7716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:20:22.7856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:20:22.7856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get()'
+2015-02-20 11:20:22.7856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:20:22.7996|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:22.7996|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:22.7996|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:22.7996|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:20:22.8176|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:22.8176|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get()'
+2015-02-20 11:20:22.8176|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:20:22.8326|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '0'
+2015-02-20 11:20:22.8326|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:22.8326|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=0
+2015-02-20 11:20:22.8486|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:22.8326|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get()'
+2015-02-20 11:20:22.8486|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get()'
+2015-02-20 11:20:22.8486|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:22.8706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=0)'
+2015-02-20 11:20:22.8706|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=0)'
+2015-02-20 11:20:22.8946|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:22.8946|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:22.8946|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:22.8946|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:22.9076|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.9076|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:22.9076|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:22.9076|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Type, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:22.9076|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.9266|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:22.9266|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Consultancies, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:22.9266|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:22.9266|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get()'
+2015-02-20 11:20:22.9416|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:22.9416|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:22.9416|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:22.9416|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:20:22.9556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.9556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:20:22.9556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:22.9556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:22.9556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:22.9726|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Type]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.9726|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Consultancies]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:22.9726|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:22.9726|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:22.9886|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:20:22.9886|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:20:22.9886|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:20:23.0056|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:20:34.6073|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Request http://localhost:58637/api/resume
+2015-02-20 11:20:34.6123|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:34.6393|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:resume'
+2015-02-20 11:20:34.6393|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Resume
+2015-02-20 11:20:34.6393|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:34.6393|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:34.6393|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:34.6563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:34.6563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:34.6563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:34.6563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:34.6563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:34.6723|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Binding parameter 'model'
+2015-02-20 11:20:34.7003|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Type='ResumeSearchModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:34.7423|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Value read='iRecruit.Models.ResumeSearchModel'
+2015-02-20 11:20:34.7563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Parameter 'model' bound to the value 'iRecruit.Models.ResumeSearchModel'
+2015-02-20 11:20:34.7563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: model=iRecruit.Models.ResumeSearchModel
+2015-02-20 11:20:34.7563|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:34.7663|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:34.7663|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Post(model=iRecruit.Models.ResumeSearchModel)'
+2015-02-20 11:20:34.7663|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Post(model=iRecruit.Models.ResumeSearchModel)'
+2015-02-20 11:20:34.9493|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:34.9593|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:34.9703|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:34.9703|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:34.9823|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.ResumeSearchResult, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:34.9823|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:34.9823|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:34.9823|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:35.0013|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:35.0013|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:35.0013|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:35.0013|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.ResumeSearchResult]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:35.0133|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:35.0133|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:35.0133|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:45.0409|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Request http://localhost:58637/api/resume
+2015-02-20 11:20:45.0499|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:45.0789|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:resume'
+2015-02-20 11:20:45.0789|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Resume
+2015-02-20 11:20:45.0789|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:45.0789|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:45.0929|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:45.0929|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:45.0929|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:45.0929|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:45.1069|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:45.1069|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:45.1069|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Binding parameter 'model'
+2015-02-20 11:20:45.1069|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Type='ResumeSearchModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:45.1069|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Value read='iRecruit.Models.ResumeSearchModel'
+2015-02-20 11:20:45.1239|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Parameter 'model' bound to the value 'iRecruit.Models.ResumeSearchModel'
+2015-02-20 11:20:45.1239|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: model=iRecruit.Models.ResumeSearchModel
+2015-02-20 11:20:45.1239|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:45.1389|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:45.1389|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Post(model=iRecruit.Models.ResumeSearchModel)'
+2015-02-20 11:20:45.1389|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Post(model=iRecruit.Models.ResumeSearchModel)'
+2015-02-20 11:20:45.1739|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:45.1739|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:45.2129|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:45.2159|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:45.2159|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.ResumeSearchResult, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:45.2159|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:45.2159|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:45.2159|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:45.2319|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:45.2319|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:45.2319|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:45.2319|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.ResumeSearchResult]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:45.2319|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:45.2479|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:45.2479|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:55.5785|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Request http://localhost:58637/api/resume
+2015-02-20 11:20:55.5785|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:55.6145|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:resume'
+2015-02-20 11:20:55.6145|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Resume
+2015-02-20 11:20:55.6145|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:56.1685|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:56.1685|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:56.1915|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:56.2015|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:56.2015|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:56.2135|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:56.2135|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:56.2135|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Binding parameter 'model'
+2015-02-20 11:20:56.2135|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Type='ResumeSearchModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:56.2315|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Value read='iRecruit.Models.ResumeSearchModel'
+2015-02-20 11:20:56.2315|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Parameter 'model' bound to the value 'iRecruit.Models.ResumeSearchModel'
+2015-02-20 11:20:56.2315|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: model=iRecruit.Models.ResumeSearchModel
+2015-02-20 11:20:56.2315|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:56.2455|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:56.2455|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Post(model=iRecruit.Models.ResumeSearchModel)'
+2015-02-20 11:20:56.2455|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Post(model=iRecruit.Models.ResumeSearchModel)'
+2015-02-20 11:20:56.2765|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:56.2765|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:56.2765|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:56.2765|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:56.2765|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.ResumeSearchResult, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:56.2925|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:56.2925|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Post(ResumeSearchModel model)'
+2015-02-20 11:20:56.2925|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:56.2925|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:56.2925|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:56.3075|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:56.3075|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.ResumeSearchResult]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:56.3075|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:56.3075|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:56.3235|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/resume System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:57.7346|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Request http://localhost:58637/api/candidate/1
+2015-02-20 11:20:57.7346|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:57.7346|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Request http://localhost:58637/api/resume/1
+2015-02-20 11:20:57.7446|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:57.7596|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:candidate,id:1'
+2015-02-20 11:20:57.7596|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Candidate
+2015-02-20 11:20:57.7596|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:57.7596|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:resume,id:1'
+2015-02-20 11:20:57.7736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:57.7736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Resume
+2015-02-20 11:20:57.7736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:20:57.7736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.CandidateController
+2015-02-20 11:20:57.7736|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:20:57.7936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.CandidateController
+2015-02-20 11:20:57.7936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController ExecuteAsync
+2015-02-20 11:20:57.7936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:57.7936|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:57.8086|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ResumeController
+2015-02-20 11:20:57.8086|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:57.8086|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:20:57.8206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:20:57.8206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:20:57.8206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:57.8206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:20:57.8386|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:20:57.8206|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:20:57.8386|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:20:57.8386|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:20:57.8526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2015-02-20 11:20:57.8386|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2015-02-20 11:20:57.8526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:57.8526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:57.8526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:57.8526|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:20:57.8686|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2015-02-20 11:20:57.8686|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2015-02-20 11:20:57.8686|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2015-02-20 11:20:57.8686|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2015-02-20 11:20:57.9316|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='<>f__AnonymousType4`2', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:58.0516|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='<>f__AnonymousType4`2', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:58.0556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:58.0516|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='CandidateModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:20:58.0556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:58.0556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='CandidateModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:20:58.0556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:20:58.0556|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[<>f__AnonymousType4`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], iRecruit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:58.0716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:58.0716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:58.0716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:58.0716|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.CandidateModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:20:58.0856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:20:58.0856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:58.0856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers ResumeController ExecuteAsync
+2015-02-20 11:20:58.0856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:20:58.0856|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:58.1026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:58.1026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:20:58.1026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController ExecuteAsync
+2015-02-20 11:20:58.1026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='{ ResumeFileName = Niraj Sinha.doc, ResumeVirtualPath = /Resumes/1/Niraj Sinha.doc }', type='<>f__AnonymousType4`2', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:58.1026|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:20:58.1196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:20:58.1196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.CandidateModel', type='CandidateModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:20:58.1196|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:58.1346|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:58.1346|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/resume/1 System.Web.Http.Controllers ResumeController Dispose
+2015-02-20 11:20:58.1506|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:20:58.1506|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController Dispose
+2015-02-20 11:20:58.1506|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController Dispose
+2015-02-20 11:21:10.0843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request http://localhost:58637/api/types
+2015-02-20 11:21:10.0843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request http://localhost:58637/api/consultants/0
+2015-02-20 11:21:10.0843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Request http://localhost:58637/api/candidate/1
+2015-02-20 11:21:10.0843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:10.0843|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:10.1003|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:10.1353|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:types'
+2015-02-20 11:21:10.1353|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Types
+2015-02-20 11:21:10.1353|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:consultants,id:0'
+2015-02-20 11:21:10.1353|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:candidate,id:1'
+2015-02-20 11:21:10.1463|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:21:10.1463|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Consultants
+2015-02-20 11:21:10.1463|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Candidate
+2015-02-20 11:21:10.1463|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:21:10.1633|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:21:10.1633|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:21:10.1633|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:21:10.1763|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:21:10.1763|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:21:10.1763|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.MasterData.TypesController
+2015-02-20 11:21:10.1763|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:21:10.1923|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.CandidateController
+2015-02-20 11:21:10.1923|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:21:10.1923|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.ConsultantsController
+2015-02-20 11:21:10.1923|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.CandidateController
+2015-02-20 11:21:10.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:21:10.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:21:10.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController ExecuteAsync
+2015-02-20 11:21:10.2093|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get()'
+2015-02-20 11:21:10.2253|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:21:10.2253|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:21:10.2253|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:21:10.2383|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:21:10.2383|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Get(Int32 id)'
+2015-02-20 11:21:10.2383|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:21:10.2383|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:21:10.2553|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:21:10.2553|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get()'
+2015-02-20 11:21:10.2553|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:21:10.2553|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Binding parameter 'id'
+2015-02-20 11:21:10.2723|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:21:10.2723|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '0'
+2015-02-20 11:21:10.2723|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding ModelBinderParameterBinding ExecuteBindingAsync Parameter 'id' bound to the value '1'
+2015-02-20 11:21:10.2853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get()'
+2015-02-20 11:21:10.2853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=0
+2015-02-20 11:21:10.2853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: id=1
+2015-02-20 11:21:10.2853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get()'
+2015-02-20 11:21:10.3023|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:21:10.3023|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:21:10.3243|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:21:10.3243|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:21:10.3323|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:21:10.3323|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=0)'
+2015-02-20 11:21:10.3323|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Get(id=1)'
+2015-02-20 11:21:10.3323|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:21:10.3323|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=0)'
+2015-02-20 11:21:10.3503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Get(id=1)'
+2015-02-20 11:21:10.3503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:21:10.3853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:10.3853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:21:10.3853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Type, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:21:10.3853|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+2015-02-20 11:21:10.4083|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:21:10.4113|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='CandidateModel', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:21:10.4113|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:21:10.4113|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get()'
+2015-02-20 11:21:10.4113|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='CandidateModel', mediaType='application/json; charset=utf-8'
+2015-02-20 11:21:10.4263|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:10.4263|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:21:10.4263|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:21:10.4263|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Collections.Generic.List`1[[iRecruit.Entity.Consultancies, iRecruit.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:21:10.4423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController ExecuteAsync
+2015-02-20 11:21:10.4423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:10.4423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:21:10.4423|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:10.4593|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[iRecruit.Models.CandidateModel, iRecruit.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:21:10.4593|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:21:10.4593|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:21:10.4773|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:21:10.4773|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:21:10.4773|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Type]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:10.4913|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Get(Int32 id)'
+2015-02-20 11:21:10.4913|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController ExecuteAsync
+2015-02-20 11:21:10.4913|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:21:10.5033|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:21:10.5033|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:10.5033|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:21:10.5033|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController ExecuteAsync
+2015-02-20 11:21:10.5203|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:21:10.5203|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/types System.Web.Http.Controllers TypesController Dispose
+2015-02-20 11:21:10.5203|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:10.5203|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='System.Collections.Generic.List`1[iRecruit.Entity.Consultancies]', type='List`1', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:10.5363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:21:10.5503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='iRecruit.Models.CandidateModel', type='CandidateModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:10.5363|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:21:10.5503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:21:10.5503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:21:10.5503|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/consultants/0 System.Web.Http.Controllers ConsultantsController Dispose
+2015-02-20 11:21:10.5683|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController Dispose
+2015-02-20 11:21:10.5683|INFO|iRecruit.Logging.NLogger|GET http://localhost:58637/api/candidate/1 System.Web.Http.Controllers CandidateController Dispose
+2015-02-20 11:21:36.7548|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Request http://localhost:58637/api/candidate
+2015-02-20 11:21:36.7548|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:21:36.7778|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Route='controller:candidate'
+2015-02-20 11:21:36.7778|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers DefaultHttpControllerSelector SelectController Candidate
+2015-02-20 11:21:36.7778|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers HttpControllerDescriptor CreateController
+2015-02-20 11:21:36.7898|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers DefaultHttpControllerActivator Create
+2015-02-20 11:21:36.7898|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers DefaultHttpControllerActivator Create iRecruit.Controllers.Profile.CandidateController
+2015-02-20 11:21:36.7898|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers HttpControllerDescriptor CreateController iRecruit.Controllers.Profile.CandidateController
+2015-02-20 11:21:36.7898|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers CandidateController ExecuteAsync
+2015-02-20 11:21:36.7898|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Action ApiControllerActionSelector SelectAction
+2015-02-20 11:21:36.8078|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Action ApiControllerActionSelector SelectAction Selected action 'Post(CandidateModel model)'
+2015-02-20 11:21:36.8078|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Filters FeatureGroupAuthorization OnAuthorizationAsync
+2015-02-20 11:21:36.8368|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Filters FeatureGroupAuthorization OnAuthorizationAsync
+2015-02-20 11:21:36.8368|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync
+2015-02-20 11:21:36.8368|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Binding parameter 'model'
+2015-02-20 11:21:36.8368|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Type='CandidateModel', content-type='application/json; charset=utf-8'
+2015-02-20 11:21:36.8678|INFO|iRecruit.Logging.NLogger| System.Net.Http.Formatting JsonMediaTypeFormatter ReadFromStreamAsync Value read='iRecruit.Models.CandidateModel'
+2015-02-20 11:21:36.8678|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.ModelBinding FormatterParameterBinding ExecuteBindingAsync Parameter 'model' bound to the value 'iRecruit.Models.CandidateModel'
+2015-02-20 11:21:36.8678|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.ModelBinding HttpActionBinding ExecuteBindingAsync Model state is valid. Values: model=iRecruit.Models.CandidateModel
+2015-02-20 11:21:36.8678|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync Action filter for 'Post(CandidateModel model)'
+2015-02-20 11:21:36.8868|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutingAsync
+2015-02-20 11:21:36.8868|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync Action='Post(model=iRecruit.Models.CandidateModel)'
+2015-02-20 11:21:36.8868|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Invoking action 'Post(model=iRecruit.Models.CandidateModel)'
+2015-02-20 11:22:15.2100|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Net.Http.Formatting DefaultContentNegotiator Negotiate Type='Boolean', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+2015-02-20 11:22:15.2260|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Obtaining formatter of type 'JsonMediaTypeFormatter' for type='Boolean', mediaType='application/json; charset=utf-8'
+2015-02-20 11:22:15.2310|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Net.Http.Formatting JsonMediaTypeFormatter GetPerRequestFormatterInstance Will use same 'JsonMediaTypeFormatter' formatter
+2015-02-20 11:22:15.2310|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Net.Http.Formatting DefaultContentNegotiator Negotiate Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+2015-02-20 11:22:15.2310|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Action ReflectedHttpActionDescriptor ExecuteAsync Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+2015-02-20 11:22:15.2470|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Action ApiControllerActionInvoker InvokeActionAsync
+2015-02-20 11:22:15.2470|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync Action filter for 'Post(CandidateModel model)'
+2015-02-20 11:22:15.2470|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Filters AllowCrossSiteOriginAttribute OnActionExecutedAsync
+2015-02-20 11:22:15.2600|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers CandidateController ExecuteAsync
+2015-02-20 11:22:15.2790|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.MessageHandlers TokenInspector SendAsync
+2015-02-20 11:22:15.2790|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Request Content-type='application/json; charset=utf-8', content-length=unknown
+2015-02-20 11:22:15.2790|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync Value='True', type='Boolean', content-type='application/json; charset=utf-8'
+2015-02-20 11:22:15.2790|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Net.Http.Formatting JsonMediaTypeFormatter WriteToStreamAsync
+2015-02-20 11:22:15.2930|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers CandidateController Dispose
+2015-02-20 11:22:15.3300|INFO|iRecruit.Logging.NLogger|POST http://localhost:58637/api/candidate System.Web.Http.Controllers CandidateController Dispose

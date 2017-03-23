@@ -1,0 +1,207 @@
+﻿@using System.Web.Optimization
+@using iRecruit.Extensions
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>iRecruit</title>
+    @Styles.Render("~/css/jquery/themes/base/css")
+    @Styles.Render("~/css/bootstrap")
+    @Styles.Render("~/css/plugins")
+    @Styles.Render("~/css/site")
+
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/bootstrap")
+    @Scripts.Render("~/scripts/angular")
+    @Scripts.Render("~/scripts/plugins")
+    @Scripts.Render("~/scripts/app/services")
+    @Scripts.Render("~/scripts/app/directives")
+    @Scripts.Render("~/scripts/app/modules")
+    @Scripts.Render("~/scripts/app")
+
+
+<!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+ 
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+    </script>
+<![endif]-->
+    
+        <style>
+            .logo { 
+                display: block; 
+                background-image: url(); 
+                background-repeat: no-repeat; 
+                background-position: 0px -68px;
+            }
+            .dropdown-menu li a:hover {
+                filter:'';
+            } 
+            .roboto-thin :hover { color:#24A0DA; }
+            .navbar .logo .dropdown-menu::after {
+              position: absolute;
+              top: -6px;
+              left: 10px;
+              display: inline-block;
+              border-right: 6px solid transparent;
+              border-bottom: 6px solid white;
+              border-left: 6px solid transparent;
+              content: '';
+            }
+            
+
+
+
+        </style>
+   
+</head>
+<body style="padding-left:80px;">
+    @*@StackExchange.Profiling.MiniProfiler.RenderIncludes()*@
+    <div id="messagewrapper" style="display: none; top:55px;">
+        @Html.RenderMessages()
+	</div>
+        @RenderSection("menu", required: false)
+	
+    <header class="header " style="top:0px;">
+    <nav class="navbar navbar-inverse" role="navigation" style="border:0px; box-shadow:none;background-color:#395672;border-top-left-radius: 0px; border-bottom-left-radius: 0px;background-image:linear-gradient(to bottom, #395672 0%, #395672 100%)">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><font size="6"><strong><span class="text-yellow">I</span>RECRUIT</strong></font> &nbsp;<small module-name></small></a>
+        </div>  
+         <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right" style="padding-right:20px;">
+                       
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding:10px">
+                                    <i class="fa fa-user bg-yellow text-center" style="width:30px;height:30px;line-height:30px;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;"></i>
+                                    <span class="roboto-thin">
+                                        <strong>{{data.UserInfo.Name}}</strong></span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="data:image/jpg;base64,{{data.UserInfo.Photo}}" ng-show="data.UserInfo.Photo != ''" class="img-circle" />
+                                        <img src="/images/bluemanm.png" ng-show="data.UserInfo.Photo == ''" class="img-circle" />
+                                        <p>
+                                            <b>{{data.UserInfo.Name}}</b> <br />({{data.UserInfo.Title}})
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        
+                                        <div class="pull-right">
+                                            @using (Html.BeginForm("SignOut", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <a href="javascript:document.getElementById('logoutForm').submit()"  class="btn btn-default btn-flat">Sign out</a>
+                                            }
+                                        
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+          </div>            
+
+         
+      </nav>
+      
+  </header>
+
+    <div class="wrapper">
+        <div class="col-lg-12" style="padding-left:50px;padding-right:50px;min-height:800px !important;">
+            @RenderBody()
+        </div>   
+   </div>
+    
+    <footer style="background-color:#395672">
+            <div class="row"  style="padding-left:20px;padding-right:20px;">
+                <div class="col-lg-1">      </div>
+                
+                 <div class="col-md-4">
+                            <!-- Danger box -->
+                            <div class="box box-solid" style="background-color:#395672;height:220px;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">Suggesions</h3>
+                                </div>
+                                <div class="box-body">
+                                    <form class="" role="form">
+		                              <div class="form-group">
+                                          <textarea class="form-control input-xsmall"  id="f_suggesions" placeholder="enter suggesions" rows="5"></textarea>
+		                              </div>
+                            
+		                              <button type="submit" class="btn btn-primary" onclick="submitFeedback();">Submit</button>
+                          
+		                            </form>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+
+                        <div class="col-md-3">
+                            <!-- Success box -->
+                            <div class="box box-solid" style="height:220px;background-color:#395672;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">About</h3>
+                                </div>
+                                <div class="box-body">
+                                    <p>About iRecruit </p>
+                                    <br />
+		                
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+
+                        <div class="col-md-2">
+                            <!-- Warning box -->
+                            <div class="box box-solid" style="height:220px;background-color:#395672;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">Policies</h3>
+                                </div>
+                                <div class="box-body">
+                                    <a ui-sref="privacy" class="btn"><span class="text-white"> Privacy policies »</span></a><br />
+		                            <a ui-sref="cookiepolicy" class="btn">Cookie policies »</a><br />
+                                    <a ui-sref="contactus" class="btn">Contact Us »</a>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                    <div class="col-md-2">
+                            <!-- Warning box -->
+                            <div class="box box-solid" style="height:220px;background-color:#395672;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">External Links</h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="javascript:void(0);" onclick="javascript:window.open('https://itimes.ihtech.com');" class="btn"><span class="text-white"> iTimes »</span></a><br />
+		                            <a href="javascript:void(0);" onclick="javascript:window.open('http://ishare.ihealthtechnologies.com');" class="btn">iShare »</a>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                
+                
+                    </div>
+
+	</footer>
+       
+    
+    <navigation menu="menu"></navigation>     
+</body>
+    
+    @RenderSection("scripts", required: false)
+    
+</html>

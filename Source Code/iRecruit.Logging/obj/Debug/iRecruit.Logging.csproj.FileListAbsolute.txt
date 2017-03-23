@@ -1,0 +1,27 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\bin\Debug\iRecruit.Logging.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\bin\Debug\iRecruit.Logging.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\bin\Debug\NLog.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\bin\Debug\System.Web.Http.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\bin\Debug\NLog.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\bin\Debug\System.Web.Http.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\iRecruit.Logging.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\iRecruit.Logging.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\NLog.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\System.Web.Http.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\NLog.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\System.Web.Http.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\iRecruit.Logging.dll
+D:\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\iRecruit.Logging.pdb
+D:\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\NLog.dll
+D:\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\System.Web.Http.dll
+D:\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\NLog.xml
+D:\iRecruit\Development\Source Code\iRecruit.Logging\bin\Debug\System.Web.Http.xml
+D:\iRecruit\Development\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.csprojResolveAssemblyReference.cache
+D:\iRecruit\Development\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.dll
+D:\iRecruit\Development\Source Code\iRecruit.Logging\obj\Debug\iRecruit.Logging.pdb

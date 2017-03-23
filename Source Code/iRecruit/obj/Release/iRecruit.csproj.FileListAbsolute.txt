@@ -1,0 +1,126 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Antlr3.Runtime.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\EntityFramework.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\EntityFramework.SqlServer.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Logging.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Repository.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Repository.Interfaces.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Security.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Newtonsoft.Json.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Ninject.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Ninject.Web.Common.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Ninject.Web.Mvc.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Net.Http.Formatting.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Helpers.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Http.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Http.WebHost.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Mvc.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Optimization.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Razor.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.WebPages.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.WebPages.Razor.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\WebActivatorEx.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\WebGrease.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\NLog.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Data.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Omu.ValueInjecter.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Logging.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Models.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Repository.Interfaces.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Repository.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Security.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Antlr3.Runtime.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\EntityFramework.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\EntityFramework.SqlServer.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Ninject.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Ninject.Web.Common.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Ninject.Web.Mvc.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Net.Http.Formatting.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Helpers.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Http.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Http.WebHost.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Mvc.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Optimization.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.Razor.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.WebPages.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\System.Web.WebPages.Razor.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Newtonsoft.Json.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\NLog.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\iRecruit.Data.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\bin\Omu.ValueInjecter.xml
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\obj\Release\iRecruit.csprojResolveAssemblyReference.cache
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\obj\Release\iRecruit.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit\obj\Release\iRecruit.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Antlr3.Runtime.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\EntityFramework.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\EntityFramework.SqlServer.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Logging.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Repository.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Repository.Interfaces.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Security.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\MiniProfiler.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Newtonsoft.Json.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Ninject.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Ninject.Web.Common.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Ninject.Web.Mvc.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Net.Http.Formatting.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Helpers.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Http.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Http.WebHost.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Mvc.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Optimization.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Razor.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.WebPages.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.WebPages.Razor.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\WebActivatorEx.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\WebGrease.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\NLog.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Data.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Omu.ValueInjecter.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Logging.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Repository.Interfaces.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Repository.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Security.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Antlr3.Runtime.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\EntityFramework.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\EntityFramework.SqlServer.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\MiniProfiler.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\MiniProfiler.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Ninject.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Ninject.Web.Common.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Ninject.Web.Mvc.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Net.Http.Formatting.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Helpers.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Http.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Http.WebHost.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Mvc.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Optimization.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.Razor.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.WebPages.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\System.Web.WebPages.Razor.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Newtonsoft.Json.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\NLog.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\iRecruit.Data.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\Omu.ValueInjecter.xml
+C:\Projects\iRecruit\Development\Source Code\iRecruit\obj\Release\iRecruit.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit\obj\Release\iRecruit.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\obj\Release\iRecruit.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\MiniProfiler.EntityFramework6.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\MiniProfiler.EntityFramework6.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit\bin\MiniProfiler.EntityFramework6.xml

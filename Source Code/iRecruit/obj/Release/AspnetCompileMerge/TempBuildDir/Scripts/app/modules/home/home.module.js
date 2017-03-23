@@ -1,0 +1,1 @@
+angular.module('irecruit.home', ['irecruit.services','angularCharts']);

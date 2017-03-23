@@ -1,0 +1,81 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+<style>
+    .popover {
+        max-width: 750px;
+        /* If max-width does not work, try using width instead */
+        width: 750px;
+    }
+</style>
+
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+        <a href="javascript:window.history.back();" class="back-button big"></a>     
+        <h1 style="font-size:36px;margin-left:80px; margin-top:45px">
+        Indent Tracker
+        </h1>
+            </div>
+        <div class="col-lg-4 pull-right">
+            <div class="form-group" style="padding-top:40px;">
+                <div class="input-group">
+                    <input name="table_search" ng-model="indent_search.IndentNumber" class="form-control input-group" placeholder="Search..." type="text">
+                    <span class="input-group-btn">
+                        <button name="seach" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+                </div><!-- /.input group -->
+            </div>
+            </div>
+            
+        </div>
+</section>
+
+<section class="content" style="overflow: hidden;">
+    <div class="row">
+        <div class="col-xs-12" infinite-scroll="nextPage()" infinite-scroll-disabled='busy' infinite-scroll-distance="3" infinitescrollimmediatecheck="false">
+
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover" id="indents_table">
+                    <tbody>
+                        <tr>
+
+                            <th><a href="" ng-click="sortPredicate = 'IndentNumber'; reverse=!reverse">Indent Number</a></th>
+                            <th><a href="" ng-click="sortPredicate = 'IndentDate'; reverse=!reverse">Date</a></th>
+                            <th><a href="" ng-click="sortPredicate = 'PositionTitle'; reverse=!reverse">Position / Title</a></th>
+                            <th><a href="" ng-click="sortPredicate = 'Client_Domain'; reverse=!reverse">Client / Domain</a></th>
+                            <th><a href="" ng-click="sortPredicate = 'Technologies'; reverse=!reverse">Technologies</a></th>
+                            <th><a href="" ng-click="sortPredicate = 'AssignedTo'; reverse=!reverse">Assigned To</a></th>
+                            <th><a href="" ng-click="sortPredicate = 'Indent_Status'; reverse=!reverse">Status</a></th>
+                            <th></th>
+                        </tr>
+                        <tr ng-repeat="i in indents | filter:indent_search| orderBy:sortPredicate:reverse">
+                            <td>{{::i.IndentNumber}}</td>
+                            <td>{{::i.IndentDate | moment:ltf}}</td>
+                            <td>{{::i.PositionTitle}}</td>
+                            <td>{{::i.Client_Domain}}</td>
+                            <td>{{::i.Technologies}}</td>
+                            <td>{{::i.AssignedTo}}</td>
+                            <td>
+                                <div ng-switch on="i.Indent_Status">
+                                    <div ng-switch-when="Approved"><span class="label label-success">{{::i.Indent_Status}}</span></div>
+                                    <div ng-switch-when="On Hold"><span class="label label-warning">{{::i.Indent_Status}}</span></div>
+                                    <div ng-switch-when="Send for Approval"><span class="label label-warning">{{::i.Indent_Status}}</span></div>
+                                    <div ng-switch-when="Rejected"><span class="label label-danger">{{::i.Indent_Status}}</span></div>
+                                    <div ng-switch-when="Cancelled"><span class="label label-danger">{{::i.Indent_Status}}</span></div>
+                                    <div ng-switch-default><span class="label label-danger">Unknown</span></div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0);" data-container="body" class="info" summary-pop-over item="i.IndentNumber"><i class="fa fa-book fa-lg" title="Information"></i></a>&nbsp;&nbsp;
+                                <a href="javascript:void(0);" title="Edit Indent" ng-click="redirect(i.IndentNumber);"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div><!-- /.box-body -->
+        </div>
+    </div>
+    </section><!-- /.content -->

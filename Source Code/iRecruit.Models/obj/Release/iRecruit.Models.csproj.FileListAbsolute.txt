@@ -1,0 +1,14 @@
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Release\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Release\iRecruit.Models.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Release\iRecruit.Entity.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\bin\Release\iRecruit.Entity.pdb
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\obj\Release\iRecruit.Models.csprojResolveAssemblyReference.cache
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\obj\Release\iRecruit.Models.dll
+C:\Projects\PS\PS-WebChamp\India Internal\iRecruit\Source Code\iRecruit.Models\obj\Release\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Release\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Release\iRecruit.Models.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Release\iRecruit.Entity.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\bin\Release\iRecruit.Entity.pdb
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\obj\Release\iRecruit.Models.csprojResolveAssemblyReference.cache
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\obj\Release\iRecruit.Models.dll
+C:\Projects\iRecruit\Development\Source Code\iRecruit.Models\obj\Release\iRecruit.Models.pdb

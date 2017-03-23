@@ -1,0 +1,72 @@
+@using System.Web.Optimization
+@{
+    Layout = null;
+}      
+            <!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="row">
+        <div class="col-lg-8">
+        <a href="javascript:window.history.back();" class="back-button big"></a>     
+        <h1 style="font-size:36px;margin-left:80px; margin-top:45px">Timeline
+        <small>{{selectedIndent}}</small>
+        </h1>
+            </div>
+        <div class="col-lg-4 pull-right">
+            <div class="form-group" style="padding-top:40px;">
+                <div class="input-group">
+                    <input type="text" class="form-control input-group" ng-model="indent" typeahead="i.value for i in searchIndents($viewValue)" typeahead-loading="loadingLocations" typeahead-on-select="onIndentSelected($item, $model, $label)">
+                        <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+                    <span class="input-group-btn">
+                        <button name="seach" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+                </div><!-- /.input group -->
+            </div>
+            </div>
+            
+        </div>
+</section>
+            <!-- Main content -->
+            <section class="content" >
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- The time line -->
+                        <ul class="timeline">
+                            <li class="time-label" ng-repeat="log in logs">
+                                <span class="bg-red" ng-if="log.Label">
+                                    {{log.RecordDate|moment: ldf}}
+                                </span>
+                                <i class="fa fa-camera bg-yellow" ng-show="log.LogType=='1'"></i>
+                                <i class="fa fa-indent bg-green" ng-show="log.LogType=='2'"></i>
+                                <i class="fa fa-indent bg-maroon" ng-show="log.LogType=='3'"></i>
+                                <i class="fa fa-camera bg-yellow" ng-show="log.LogType=='4'"></i>
+                                <i class="fa fa-user bg-green" ng-show="log.LogType=='5' || log.LogType=='6'"></i>
+                                <i class="fa fa-user bg-maroon" ng-show="log.LogType=='7' || log.LogType=='8'""></i>
+                                
+                                <div class="timeline-item" ng-if="!log.Label">
+                                    <span class="time"><i class="fa fa-clock-o"></i> {{ log.RecordDate| moment:'hh:mm A z'}}</span>
+                                    <h3 class="timeline-header">{{log.Header}}</h3>
+                                    <div class="timeline-body">
+                                        {{log.Description}}
+                                    </div>
+                                    <div class="timeline-footer" ng-show="log.Comments && log.Comments != ''">
+                                        <a class="btn btn-xs bg-yellow" href="javascript:void(0);" ng-click="log.show=!log.show">comments</a>
+                                        <p ng-show="log.show">{{log.Comments}}</p>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            
+                            <li>
+                                <i class="fa fa-clock-o"></i>
+                            </li>
+                        </ul>
+                        <div style="padding-left:50px" ng-show="!logs.length">No activities found.</div>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+
+            </section><!-- /.content -->
+
+ @section scripts{       
+ }

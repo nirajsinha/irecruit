@@ -1,0 +1,275 @@
+﻿@using System.Web.Optimization
+@using iRecruit.Extensions
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>iRecruit</title>
+    @Styles.Render("~/css/jquery/themes/base/css")
+    @Styles.Render("~/css/bootstrap")
+    @Styles.Render("~/css/plugins")
+    @Styles.Render("~/css/site")
+
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/bootstrap")
+    @Scripts.Render("~/scripts/angular")
+    @Scripts.Render("~/scripts/plugins")
+    @Scripts.Render("~/scripts/app")
+    @Scripts.Render("~/scripts/app/services")
+    @Scripts.Render("~/scripts/app/directives")
+    @Scripts.Render("~/scripts/app/controllers")
+    
+<!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+ 
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+    </script>
+<![endif]-->
+        <style>
+            .logo { 
+                display: block; 
+                background-image: url(); 
+                background-repeat: no-repeat; 
+                background-position: 0px -68px;
+            }
+            .dropdown-menu li a:hover {
+            filter:'';
+            } 
+            .roboto-thin :hover { color:#24A0DA; }
+            .navbar .logo .dropdown-menu::after {
+              position: absolute;
+              top: -6px;
+              left: 10px;
+              display: inline-block;
+              border-right: 6px solid transparent;
+              border-bottom: 6px solid white;
+              border-left: 6px solid transparent;
+              content: '';
+            }
+        </style>
+   
+</head>
+<body  class="skin-blue">
+    <div id="messagewrapper" style="display: none; top:55px;">
+        @Html.RenderMessages()
+	</div>
+        @RenderSection("menu", required: false)
+	<div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+
+	</div>
+    <header class="header " style="height:100px;top:0px;background-color:#595758;">
+    
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation" style="background-color:transparent">
+          <div class="logo collapse navbar-collapse" style="width:400px;text-align:left;background-color:transparent">
+            <h1 style="line-height:.5;  margin-left:20px; color:white"><strong><span class="text-yellow">I</span>RECRUIT</strong></h1>
+              <ul class="nav navbar-nav">
+              <li class="dropdown notifications-menu">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                     <span class="roboto-thin" style='font-size:20px;margin-left:5px;'><strong>Recruitment Featured</strong></span>
+                     @*<span class='fa fa-caret-down' style="color:white;"></span>*@
+                      <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu" style="font-family:Century Gothic;">
+                   <li> <a ui-sref="home"> <i class="fa fa-dashboard"></i> <span>Dashboard</span> </a></li>
+                    <li class="divider"></li>
+                    <li><a ui-sref="indent"> <i class="fa fa-dashboard"></i> Indent</a></li>
+                    <li><a ui-sref="indent-timeline" > <i class="fa fa-dashboard"></i> Indent Timeline</a></li>
+                    <li class="divider"></li>    
+                    <li><a href="#">Manage Resume</a></li>
+                    <li><a href="#" > Schedule Interview</a></li>
+                    <li><a href="#" > Interview Feedback</a></li>
+                    <li><a ui-sref="resource-profile" ><i class="fa fa-dashboard"></i> View Profile</a></li>
+                    <li class="divider"></li>            
+                    <li><a href="#"> Branches</a></li>
+                    <li><a ui-sref="settings-departments"> <i class="fa fa-dashboard"></i> Departments</a></li>
+                    <li><a href="#"> Consultants</a></li>
+                    <li><a href="#"> Technologies</a></li>
+                    <li><a href="#"> Skill - Sets</a></li>
+                    <li><a href="#"> Notifications</a></li>
+                    <li><a href="#"> Dashboard Configurations</a></li>
+                       <li class="divider"></li> 
+                     <li><a ui-sref="reports-indent-tracker"> <i class="fa fa-dashboard"></i> Indent Tracker</a></li>
+                  </ul>
+                </li>
+                  </ul>
+          </div>
+          <div class="pull-right">
+              
+            
+
+                <div class="pull-left navbar-right"">
+                   <ul class="nav navbar-nav">
+                            <!-- Notifications: style can be found in dropdown.less -->
+                            <li class="dropdown notifications-menu" style="padding-top:10px;">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-tasks"></i>
+                                    <span class="label label-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 10 new notifications</li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ion ion-ios7-people info"></i> 5 new members joined today
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users warning"></i> 5 new members joined
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ion ion-ios7-cart success"></i> 10 interviews made
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ion ion-ios7-person danger"></i> You changed your username
+                                                </a>
+                                            </li>
+                                        </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                                    </li>
+                                    <li class="footer"><a href="#">View all</a></li>
+                                </ul>
+                            </li>
+                        
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user bg-yellow text-center" style="width:30px;height:30px;line-height:30px;border-top-left-radius:50%;border-top-right-radius:50%;border-bottom-right-radius:50%;border-bottom-left-radius:50%;"></i>
+                                    <span class="roboto-thin" style='font-size:16px;'>
+                                        <strong>{{data.UserInfo.Name}}</strong></span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header bg-aqua">
+                                        <img src="/images/profile_icon.png" class="img-circle" alt="User Image">
+                                        <p>
+                                            {{data.UserInfo.Name}} - {{data.UserInfo.Title}}
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        @*<div class="pull-left">
+                                            <a ui-sref="resource-profile" class="btn btn-default btn-flat">Profile</a>
+                                        </div>*@
+                                        <div class="pull-right">
+                                            @using (Html.BeginForm("SignOut", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <a href="javascript:document.getElementById('logoutForm').submit()"  class="btn btn-default btn-flat">Sign out</a>
+                                            }
+                                        
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+            
+        </div>
+         
+      </nav>
+  </header>
+
+    <div class="wrapper">
+        <div class="col-lg-12" style="padding-left:50px;padding-right:50px;">
+                @RenderBody()
+             </div>   
+        
+   </div>
+    	<footer style="background-color:#595758;">
+            <div class="row"  style="padding-left:20px;padding-right:20px;">
+                <div class="col-lg-1">      </div>
+                <div class="col-lg-10">       
+                 <div class="col-md-3">
+                            <!-- Danger box -->
+                            <div class="box box-solid" style="background-color:#595758;height:220px;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">Suggesions</h3>
+                                </div>
+                                <div class="box-body">
+                                    <form class="" role="form">
+		                              <div class="form-group">
+                                          <textarea class="form-control input-xsmall"  id="f_suggesions" placeholder="enter suggesions" rows="4"></textarea>
+		                              </div>
+                            
+		                              <button type="submit" class="btn btn-primary" onclick="submitFeedback();">Submit</button>
+                          
+		                            </form>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+
+                        <div class="col-md-3">
+                            <!-- Success box -->
+                            <div class="box box-solid" style="height:220px;background-color:#595758;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">About</h3>
+                                </div>
+                                <div class="box-body">
+                                    <p>About iRecruit </p>
+                                    <br />
+		                
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+
+                        <div class="col-md-3">
+                            <!-- Warning box -->
+                            <div class="box box-solid" style="height:220px;background-color:#595758;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">Policies</h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="~/privacy" class="btn"><span class="text-white"> Privacy policies »</span></a><br />
+		                            <a href="~/cookie-policy" class="btn">Cookie policies »</a><br />
+                                    <a href="~/contactus" class="btn">Contact Us »</a>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                    <div class="col-md-3">
+                            <!-- Warning box -->
+                            <div class="box box-solid" style="height:220px;background-color:#595758;">
+                                <div class="box-header">
+                                    <h3 class="box-title" style="color:white">External Links</h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="javascript:void(0);" onclick="javascript:window.open('https://itimes.ihtech.com');" class="btn"><span class="text-white"> iTimes »</span></a><br />
+		                            <a href="javascript:void(0);" onclick="javascript:window.open('http://ishare.ihealthtechnologies.com');" class="btn">iShare »</a>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                    </div>
+                <div class="col-lg-1">      </div>
+                    </div>
+
+	</footer>
+    
+    @RenderSection("scripts", required: false)
+    
+    <div id="dynamic_div" style="display:none">
+        <div id="dynamic_data">
+
+        </div>   
+    </div>   
+    
+           
+</body>
+</html>
